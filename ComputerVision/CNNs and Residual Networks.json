@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "question": "Why do CNNs use convolutions instead of fully connected layers on images (main benefit)?",
+      "options": [
+        "Faster GPU multiplication only.",
+        "Enforces spatial invariance via max-pooling.",
+        "Local connectivity + weight sharing → far fewer params and translation bias.",
+        "Enables larger batch sizes."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "What does \"translation equivariance\" of convolution mean?",
+      "options": [
+        "If input shifts, the output becomes invariant.",
+        "If input shifts, the feature map shifts similarly (before pooling/stride).",
+        "The network becomes robust to rotations.",
+        "It reduces parameters by 50%."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Why does residual learning help very deep nets?",
+      "options": [
+        "Decreases memory usage.",
+        "Eliminates vanishing gradients entirely.",
+        "Provides an identity path so the block learns a small residual correction.",
+        "Makes BN unnecessary."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "BatchNorm during training vs inference:",
+      "options": [
+        "Training uses batch mean/var; inference uses running (moving) stats.",
+        "Training and inference both use batch stats.",
+        "Training uses running stats; inference uses batch stats.",
+        "Neither uses moving averages."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Main reason ReLU helps gradient flow compared to sigmoid/tanh:",
+      "options": [
+        "ReLU has larger kernels.",
+        "Derivative is 1 for positive inputs (no saturation on that side).",
+        "ReLU reduces parameter count.",
+        "ReLU guarantees zero training loss."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Why use He (Kaiming) initialization with ReLU networks?",
+      "options": [
+        "To force activations to be zero-centered.",
+        "To preserve activation/gradient variance through layers with rectifiers.",
+        "To make learning rate tuning unnecessary.",
+        "To avoid using BN."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Global average pooling (GAP) at the end of a CNN mainly:",
+      "options": [
+        "Increases spatial resolution of logits.",
+        "Aggregates spatial info to channel descriptors → fewer parameters before the classifier.",
+        "Replaces convolutions.",
+        "Acts as data augmentation."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "In a BasicBlock (ResNet-18/34), the residual output is computed as:",
+      "options": [
+        "y = Conv3x3(x) + x (no BN/ReLU).",
+        "y = F(x) + x where F is two 3×3 convs with BN and ReLU after the first conv.",
+        "y = F(x) only (no skip).",
+        "y = ReLU(x)."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "In the BottleneckBlock used by ResNet-50/101/152,  the sequence of convolutions is:",
+      "options": [
+        "3×3 → 1×1 → 3×3.",
+        "1×1 → 3×3 → 1×1.",
+        "Only 1×1 (depthwise).",
+        "3×3 only."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "A projection (1×1) shortcut is required in a residual layer when:",
+      "options": [
+        "You want to shrink the tensor spatially without changing channels.",
+        "Either the stride ̸= 1 or the number of channels changes.",
+        "For every block regardless of shape.",
+        "Only when using pre-activation."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    }
+  ]
+}

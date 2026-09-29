@@ -1,0 +1,126 @@
+{
+  "questions": [
+    {
+      "question": "Imagina que deseas realizar un análisis exhaustivo del espacio en disco de tu sistema Linux. Primero, quieres obtener información detallada sobre el uso de espacio en disco de un directorio llamado 'documentos'. Luego, necesitas determinar la capacidad de almacenamiento y las particiones disponibles en tu disco duro (siempre que el primer comando se halla ejecutado de forma correcta). ¿Cuál sería la secuencia de comandos adecuada para llevar a cabo estas tareas?",
+      "options": [
+        "fdisk -l && du -sh /documentos && df -h",
+        "du -sh /documentos && du /documentos",
+        "df -h && fdisk -l && du -sh /documentos",
+        "du -sh /documentos && df -h && fdisk -l"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Si deseas dar permisos de lectura, escritura y ejecución a un archivo en Linux para todos los usuarios, ¿cuál sería el comando correcto?",
+      "options": [
+        "chmod 644 archivo",
+        "chmod 755 archivo",
+        "chmod 666 archivo",
+        "chmod 777 archivo"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Como sysadmin quieres ver la carga promedia del sistema en tiempo real (cada 1 segundo), teniendo en cuenta los comandos vistos en clase y exceptuando el uso de `top` ¿Qué comando usarías? (Ejemplo de respuesta no aplicable a este ejercicio echo '1' >/var/log/dpkg.log ;  ps ; time",
+      "options": ["watch -n 1 uptime", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Escribe el comando que usarías para enviar el siguiente proceso a background watch uptime",
+      "options": ["watch uptime &", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Cuantos comandos/pasos son necesarios para que un nuevo disco duro este disponible en la carpeta /tmp/alumnos teniendo en cuenta que el disco duro está recién conectado y la carpeta /tmp/alumnos no existe.",
+      "options": ["4", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Después de ejecutar el comando `ls -l` obtienes la siguiente descripción de ficheros. Teniendo en cuenta la información mostrada ¿Cuántos enlaces existen?",
+      "options": ["10", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "images": ["folderImage.png"]
+    },
+    {
+      "question": "Después de ejecutar el comando `ls -l` obtienes la siguiente descripción de ficheros. Teniendo en cuenta la información mostrada ¿Cuántos directorios existen?",
+      "options": ["16", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "images": ["folderImage.png"]
+    },
+    {
+      "question": "Escribe el comando que usarías para monitorizar cada segundo las 10 últimas líneas del fichero /var/log/mysql/error.log",
+      "options": ["watch -n 1 tail -10 /var/log/mysql/error.log", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Como sysadmin desear cambiar los permisos de una carpeta 'tareas' para que pertenezcan al usuario 'alumno' y al grupo 'aprobados'. ¿Qué comando/s emplearías? (Ejemplo de respuesta no aplicable a este ejercicio echo '1' >/var/log/dpkg.log ;  ps ; time )",
+      "options": ["chown alumno:aprobados tareas", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "¿Qué comando usarías para cambiar la configuración de MySQL teniendo en cuenta que el fichero se encuentra en /etc/mysql/conf.d/my.cnf?",
+      "options": ["nano /etc/mysql/conf.d/my.cnf", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Imagina que tienes un archivo de registro llamado '/var/log/dpkg.log' que contiene una gran cantidad de datos. Deseas encontrar todas las líneas que contienen la palabra 'status' y de esas líneas, las que contienen únicamente la palabra 'ubuntu' en ese archivo de registro. ¿Qué secuencias de comandos de Linux (vistos en clase) lograría esto? (ejemplo de respuesta no aplicable a este ejercicio echo '1' >/var/log/dpkg.log |  ps | time )",
+      "options": [
+        "cat /var/log/dpkg.log | grep 'status' | grep 'ubuntu'",
+        "",
+        "",
+        ""
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "El usuario empleado1 está intentando acceder a la carpeta /usr/empleado2 y no tiene permisos ¿Cómo sysadmin cómo lo solucionarías teniendo en cuenta la seguridad general?",
+      "options": [
+        "Añadiría al usuario empleado1 al grupo de sudoers",
+        "Cambiaría los permisos de la carpeta haciendo uso de `chmod -R +rw /usr/empleado2",
+        "Ninguna de las anteriores es correcta",
+        "Cambiaría los permisos de la carpeta haciendo uso de `chmod -R 777 /usr/empleado2"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Supongamos que deseas formatear una nueva partición que creaste en tu disco duro para que pueda ser utilizada para almacenar datos. ¿Cuál de los siguientes comandos sería apropiado para formatear la partición con un sistema de archivos ext4?",
+      "options": [
+        "fscreate ext4 /dev/sda1",
+        "mkdisk -fs ext4 /dev/sda1",
+        "format -ext4 /dev/sda1",
+        "mkfs -t ext4 /dev/sda1"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Imagina que necesitas conocer la cantidad total de espacio en disco utilizado por un directorio llamado 'datos', verificar la capacidad de almacenamiento de tu sistema y, finalmente, listar las particiones de tu disco duro. ¿Cuál sería el orden correcto para ejecutar estos comandos?",
+      "options": [
+        "du -sh /datos && df -h && fdisk -l",
+        "du -sh /datos && df -h /datos && fdisk -l",
+        "fdisk -l && du -sh /datos && df -h",
+        "df -h && fdisk -l && du -sh /datos"
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Escribe el comando (y sus opciones) que usarías para que se muestre desde cuando tu ordenador lleva encendido con el siguiente formato:",
+      "options": ["uptime -s", "", "", ""],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    }
+  ]
+}

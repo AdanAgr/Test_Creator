@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "question": "In dense prediction, what must the network preserve or reconstruct that a classifier discards?",
+      "options": [
+        "Global label distribution only.",
+        "Pixelwise spatial structure (per-location outputs).",
+        "Only channel count, not spatial size.",
+        "Only the image's aspect ratio."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "What key problem does the encoder-decoder pattern solve?",
+      "options": [
+        "It eliminates the need for normalization layers.",
+        "It increases parameter count for better accuracy.",
+        "It balances global semantics with local detail to produce full-res outputs.",
+        "It ensures the model never downsamples features."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "What do skip connections primarily do in U-Net?",
+      "options": [
+        "Reduce memory usage.",
+        "Pass high-resolution encoder features to the decoder to restore detail.",
+        "Replace the need for upsampling.",
+        "Prevent overfitting by randomly dropping features."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Why use 3×3 convs with padding=1 in DoubleConv?",
+      "options": [
+        "To reduce the number of parameters.",
+        "To preserve spatial dimensions (H×W) across the block.",
+        "To implement anti-aliasing.",
+        "To enforce channel grouping."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "A common trade-off between ConvTranspose2d and bilinear-upsample+conv is:",
+      "options": [
+        "ConvTranspose2d is non-learnable; bilinear is learnable.",
+        "ConvTranspose2d is always artifact-free.",
+        "Bilinear+conv is stable; ConvTranspose2d is learnable but can cause checkerboard artifacts.",
+        "Bilinear+conv can only upsample by factors of 4."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "What is the main role of the bottleneck in U-Net?",
+      "options": [
+        "Enforce output calibration.",
+        "Provide the deepest, most semantic features at lowest resolution.",
+        "Convert logits to probabilities.",
+        "Reduce training time by freezing gradients."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "When might Dice or Focal loss be preferred over plain BCE in binary segmentation?",
+      "options": [
+        "When outputs are already probabilities.",
+        "For severe foreground/background imbalance and overlap quality.",
+        "Only when labels are multiclass.",
+        "When you cannot compute gradients."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Why use BCEWithLogitsLoss on raw logits but apply sigmoid before Dice/IoU?",
+      "options": [
+        "BCEWithLogitsLoss requires probabilities.",
+        "BCEWithLogitsLoss expects logits; Dice/IoU need probabilities or masks.",
+        "Dice/IoU require logits; BCEWithLogitsLoss needs masks.",
+        "All three require softmax."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Which sequence correctly implements DoubleConv while preserving H×W?",
+      "options": [
+        "Conv2d(k=3,p=0) → ReLU → Conv2d(k=3,p=0) → ReLU.",
+        "Conv2d(k=1) → BN → ReLU → Conv2d(k=1) → BN → ReLU.",
+        "Conv2d(k=3,p=1) → BN → ReLU → Conv2d(k=3,p=1) → BN → ReLU.",
+        "Conv2d(k=5,p=0) → BN → ReLU → MaxPool2d."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "What should EncoderBlock.forward return and why?",
+      "options": [
+        "(pooled, pooled) to save memory.",
+        "(features, pooled) to keep high-res features for skip and downsampled for the next stage.",
+        "(features, features) to avoid pooling.",
+        "Only pooled since features are reconstructed later."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    }
+  ]
+}

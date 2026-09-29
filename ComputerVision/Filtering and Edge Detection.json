@@ -1,0 +1,109 @@
+{
+  "questions": [
+    {
+      "question": "The Nyquist sampling criterion for a 1D sinusoid of frequency f_max (cycles/pixel) requires a sampling rate of at least:",
+      "options": ["f_max.", "2f_max.", "f_max/2.", "4f_max."],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Aliasing occurs when:",
+      "options": [
+        "The sensor is noisy.",
+        "Sampling rate < 2f_max.",
+        "Image is low-contrast.",
+        "Using 16-bit images."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "A simple way to reduce aliasing before downsampling is to:",
+      "options": [
+        "Increase brightness.",
+        "Apply a low-pass (Gaussian) filter.",
+        "Histogram equalization.",
+        "Sharpen the image."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Convolution vs correlation: true convolution differs because it:",
+      "options": [
+        "Adds bias.",
+        "Flips the kernel before sliding.",
+        "Uses padding.",
+        "Only works on grayscale."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Separable filters (e.g., Gaussian) are efficient because they:",
+      "options": [
+        "Use FFT.",
+        "Use integral images.",
+        "Factorize a 2D kernel into 1D vertical/horizontal passes.",
+        "Skip padding."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "The Sobel operator estimates:",
+      "options": [
+        "Texture orientation only.",
+        "First-order image gradients in x and y.",
+        "Second derivatives.",
+        "Binary edges directly."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Non-maximum suppression in Canny is used to:",
+      "options": [
+        "Threshold gradients.",
+        "Thin edges by keeping local maxima along the gradient direction.",
+        "Smooth edges.",
+        "Connect edges via hysteresis."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "In Canny, \"double threshold + hysteresis\" ensures that:",
+      "options": [
+        "Only the strongest edges remain, isolated.",
+        "Weak edges connected to strong ones are kept, others discarded.",
+        "All weak edges are removed.",
+        "Thresholds are auto-computed."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Morphological opening (erosion then dilation) is best for:",
+      "options": [
+        "Removing small bright noise while preserving object shape.",
+        "Filling small holes in objects.",
+        "Edge detection.",
+        "Contrast stretching."
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "In frequency analysis (FFT magnitude), high-frequency components typically correspond to:",
+      "options": [
+        "Smooth regions.",
+        "Only lighting changes.",
+        "Edges and fine textures.",
+        "Only sensor noise."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    }
+  ]
+}

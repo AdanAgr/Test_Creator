@@ -1,0 +1,99 @@
+{
+  "questions": [
+    {
+      "question": "When converting an image from NumPy (H×W×C) to PyTorch, what is the correct target shape for standard CNNs?",
+      "options": ["H×W×C.", "C×H×W.", "1×H×W×C.", "H×C×W."],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "The minimum number of point correspondences needed to estimate a homography (DLT) is:",
+      "options": ["3.", "4.", "5.", "8."],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "A similarity transform includes which of the following components?",
+      "options": [
+        "Non-uniform scale, shear, translation.",
+        "Uniform scale, rotation, translation.",
+        "Projective warp, shear only.",
+        "Rotation only."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "In Lab 1, what OpenCV function is used to apply a full 3×3 homogeneous transform to an image?",
+      "options": [
+        "cv2.warpAffine.",
+        "cv2.perspectiveTransform.",
+        "cv2.warpPerspective.",
+        "cv2.remap."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "Which OpenCV call refines detected checkerboard corners to sub-pixel accuracy during calibration?",
+      "options": [
+        "cv2.cornerSubPix.",
+        "cv2.goodFeaturesToTrack.",
+        "cv2.cornerHarris.",
+        "cv2.minEigenVal."
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "In the calibration code, objpoints and imgpoints are respectively:",
+      "options": [
+        "2D points & 3D points.",
+        "3D grid points & detected 2D image corners.",
+        "Distorted points & undistorted points.",
+        "Pixel coords & normalized coords."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "A common use of HSV over RGB in vision tasks is to:",
+      "options": [
+        "Reduce image size.",
+        "Separate chromatic content from intensity for robust thresholding.",
+        "Encode depth.",
+        "Reduce noise by Gaussian blur."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "In global histogram equalization (from scratch in the demo), the mapping uses",
+      "options": [
+        "Mean of the histogram only.",
+        "The cumulative distribution function (CDF).",
+        "The median intensity only.",
+        "Laplacian filter response."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "CLAHE (adaptive histogram equalization) limits contrast locally to:",
+      "options": [
+        "Reduce noise amplification/saturation in tiles.",
+        "Increase hue accuracy.",
+        "Remove lens distortion.",
+        "Guarantee uniform edges."
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice"
+    },
+    {
+      "question": "In the exercises, which transformation preserves parallel lines but not lengths/angles in general?",
+      "options": ["Projective.", "Affine.", "Similarity.", "Non-rigid."],
+      "correct_option": 1,
+      "questionType": "singleChoice"
+    }
+  ]
+}
