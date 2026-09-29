@@ -1,12 +1,43 @@
 # Creador de tests
 
-## Resumen
+Generador de exámenes tipo test a partir de archivos JSON, con preguntas y respuestas en orden aleatorio, corrección automática en el navegador y explicaciones opcionales.
 
-Esto es un programa que crea exámenes tipo tests eligiendo las preguntas y poniendo el orden de las respuestas de manera aleatoria. Una vez generado el html se puede responder al examen y se autocorrige y da la nota que se ha sacado.
+Este repositorio es una versión independiente basada en [GRIA-TestCreator](https://github.com/AdanAgr/GRIA-TestCreator). Mantiene el reconocimiento a los autores y colaboradores del proyecto de origen y añade las modificaciones descritas a continuación.
 
-## Uso
+## Modificaciones de esta versión
 
-Para generar exámenes, edita [config.json](/config.json) y ejecuta `python main.py`. Ya no es necesario modificar el código de `main.py`.
+Cambios incorporados el **29 de septiembre de 2026**:
+
+- **Archivo de configuración:** las carpetas, el número de exámenes, las preguntas por examen y el estilo se eligen desde `config.json`, sin editar `main.py`.
+- **Varias carpetas por examen:** se pueden combinar preguntas de distintas asignaturas, temas o parciales.
+- **Lectura de subcarpetas:** se buscan archivos de preguntas en todos los niveles de las carpetas seleccionadas, sin duplicar archivos cuando las rutas se solapan.
+- **Explicaciones opcionales:** cada pregunta puede incluir el motivo de la respuesta correcta, que aparece después de corregir el examen. Los JSON anteriores siguen siendo compatibles.
+- **Resolución de rutas:** las carpetas relativas se interpretan desde la ubicación de `config.json`, y las imágenes se buscan junto al JSON que las referencia.
+- **Validación de la configuración:** se muestran errores cuando las carpetas no existen, los valores de configuración no son válidos o no se encuentran preguntas.
+
+Se mantienen las preguntas de respuesta única y múltiple, las imágenes, la selección aleatoria, la corrección automática y los estilos `default`, `legacy` y `dark` del proyecto de origen.
+
+## Requisitos y uso
+
+Necesitas **Python 3.10 o superior** y un navegador con JavaScript habilitado. La generación de exámenes utiliza la biblioteca estándar de Python; no requiere instalar dependencias adicionales.
+
+1. Descarga o clona este repositorio y abre una terminal en su carpeta.
+2. Edita [config.json](config.json) para seleccionar las carpetas y las opciones del examen.
+3. Ejecuta:
+
+```bash
+python main.py
+```
+
+En Windows también puedes usar `py main.py` si tienes instalado el lanzador de Python.
+
+Los exámenes se guardan como `ExamenTest1.html`, `ExamenTest2.html`, etc., en la carpeta desde la que ejecutes el programa. Cuando generas un solo examen, se abre automáticamente en el navegador; si generas varios, abre el HTML que quieras resolver.
+
+Responde a las preguntas y pulsa **Enviar respuestas** para ver la nota, las respuestas correctas y las explicaciones disponibles. Para generar un nuevo examen, vuelve a ejecutar el programa; se reutilizan los mismos nombres de archivo.
+
+## Configuración
+
+El archivo [config.json](config.json), situado junto a `main.py`, incluye inicialmente:
 
 ```json
 {
@@ -17,72 +48,110 @@ Para generar exámenes, edita [config.json](/config.json) y ejecuta `python main
 }
 ```
 
-- `folders`: Lista de carpetas de preguntas. Las rutas relativas se interpretan desde la carpeta de `config.json`; también se admiten rutas absolutas.
-- `numExams`: Número de exámenes que se generan (por defecto, 1).
-- `numOfQuestions`: Número total de preguntas por examen, combinando todas las carpetas seleccionadas (por defecto, 30).
-- `style`: Estilo del examen: `default`, `legacy` o `dark` (por defecto, `default`).
+| Campo | Descripción | Valor por defecto |
+| --- | --- | --- |
+| `folders` | Lista no vacía de carpetas que contienen preguntas. Admite rutas relativas a `config.json` y rutas absolutas. | Obligatorio |
+| `numExams` | Número de exámenes que se generan; debe ser un entero mayor que cero. | `1` |
+| `numOfQuestions` | Número total de preguntas de cada examen, combinando las carpetas seleccionadas; debe ser un entero mayor que cero. | `30` |
+| `style` | Apariencia del examen: `default`, `legacy` o `dark`. | `"default"` |
 
-Se buscan archivos `Unit*.json` en cada carpeta y en todas sus subcarpetas. Por ejemplo, puedes organizar las preguntas así:
+Si solicitas más preguntas de las disponibles, el programa avisa y permite repeticiones.
+
+### Carpetas y subcarpetas
+
+Puedes organizar tus preguntas por asignatura, parcial o tema, por ejemplo:
 
 ```text
 DXAR/
   Parcial1/
     Unit1.json
+    imagenes/
+      esquema.png
   Parcial2/
     Unit2.json
+PIC/
+  Unit2Students.json
 ```
 
-Con `"folders": ["DXAR"]` se incluyen ambos parciales; con `"folders": ["DXAR/Parcial1"]` se incluye solo el primero. También puedes combinar carpetas, por ejemplo `"folders": ["DXAR/Parcial1", "PIC"]`. Si seleccionas una carpeta y una de sus subcarpetas, cada archivo se lee una sola vez.
+| Selección en `folders` | Preguntas incluidas |
+| --- | --- |
+| `["DXAR"]` | Todos los parciales y subcarpetas de DXAR. |
+| `["DXAR/Parcial1"]` | Solo el primer parcial y sus subcarpetas. |
+| `["DXAR/Parcial1", "DXAR/Parcial2"]` | Ambos parciales. |
+| `["DXAR/Parcial1", "PIC"]` | El primer parcial de DXAR y las preguntas de PIC. |
 
-Las imágenes de cada pregunta se buscan respecto a la carpeta del JSON que la contiene. Los exámenes se guardan como `ExamenTest1.html`, `ExamenTest2.html`, etc., en la carpeta desde la que ejecutes el programa; si generas uno solo, se abre automáticamente en el navegador. Si solicitas más preguntas de las disponibles, se permiten repeticiones, como antes.
+Estas rutas son ejemplos: crea las carpetas y sus archivos antes de seleccionarlas. Si incluyes una carpeta y una de sus subcarpetas, cada archivo se lee una sola vez.
 
-## Contribuir
+## Crear archivos de preguntas
 
-**Importante:** Al hacer un pull request se realiza una comprobación de formateo que para pasarla deben estar los ficheros con un formato en específico. La mejor manera de asegurarse de que esto siempre ocurra es ejecutar la acción sobre formateo en el fork que has creado. Es necesario que sea en el fork; y solo se necesita una vez manualmente, ya que se ejecuta cada vez que haya un cambio en el fork. No se ejecuta de manera automática inicialmente por razones de seguridad en GitHub.
+Guarda los archivos en **UTF-8**, con nombres que empiecen por `Unit` y terminen en `.json`, como `Unit1.json` o `Unit2Students.json`. Cada archivo contiene un objeto con la clave `questions` y una lista de preguntas.
 
-La manera fácil de contribuir es añadiendo más preguntas. Estas se encuentran en los ficheros .json que hay en la carpeta de cada asignatura. Los ficheros tienen que seguir el formato de empezar por `Unit` y acabar por `.json`. Cada fichero es un diccionario con una única clave `questions` cuyo valor es una lista de diccionarios. Más bajo se explica cada tipo de pregunta que está implementado. Antes de subir una pregunta nueva asegúrate de que está bien escrita, la respuesta es la correcta y que el programa sigue funcionando.
-
-Para añadir tus cambios haz un fork con el nombre de la asignatura a la que quieres añadir preguntas y añade las preguntas. Luego haz un pull request y si todo está bien se añadirá al programa.
-
-### `singleChoice`
-
-Tiene que tener las siguientes claves:
-
-- `question`: La pregunta que se quiere hacer.
-- `options`: Una lista de strings con las opciones de respuesta.
-- `correct_option`: Un entero que indica el índice de la lista de opciones que es la correcta. Este índice está en base 0.
-- `questionType`: Un string que indica el tipo de pregunta. Tiene que ser `singleChoice` para este tipo de pregunta.
-
-### `multipleChoice`
-
-Tiene que tener las siguientes claves:
-
-- `question`: La pregunta que se quiere hacer.
-- `options`: Una lista de strings con las opciones de respuesta.
-- `correct_options`: Una lista de enteros que indica los índices de la lista de opciones que son correctas. Estos índices están en base 0.
-- `questionType`: Un string que indica el tipo de pregunta. Tiene que ser `multipleChoice` para este tipo de pregunta.
-
-### Explicación opcional
-
-Las preguntas `singleChoice` y `multipleChoice` pueden incluir un campo `explication` con un texto que explique la respuesta correcta. También se admite `explicacion`; si se incluyen ambos campos, se usa `explication`.
-
-La explicación aparece debajo de la respuesta correcta únicamente después de pulsar **Enviar respuestas**, tanto si se acierta como si se falla o se deja la pregunta sin responder. Si el campo no existe, es `null` o está vacío, no se muestra nada y los JSON antiguos siguen funcionando sin cambios. El contenido se muestra como texto, no como HTML.
-
-Ejemplo de pregunta con explicación:
+Ejemplo completo con los dos tipos de pregunta:
 
 ```json
 {
-  "question": "¿Qué indica el overfitting?",
-  "options": [
-    "Que el modelo se ajusta demasiado a los datos de entrenamiento y generaliza mal.",
-    "Que el modelo generaliza perfectamente a datos nuevos."
-  ],
-  "correct_option": 0,
-  "questionType": "singleChoice",
-  "explication": "El overfitting indica que el modelo se ha sobreajustado a los datos de entrenamiento, por lo que pierde capacidad de generalizar."
+  "questions": [
+    {
+      "question": "¿Qué indica el overfitting?",
+      "options": [
+        "Que el modelo se ajusta demasiado a los datos de entrenamiento y generaliza mal.",
+        "Que el modelo generaliza perfectamente a datos nuevos.",
+        "Que el modelo no ha aprendido ningún patrón."
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "El modelo se ha sobreajustado a los datos de entrenamiento, por lo que pierde capacidad de generalizar a datos nuevos."
+    },
+    {
+      "question": "¿Cuáles de estos números son primos?",
+      "options": ["2", "4", "5", "9"],
+      "correct_options": [0, 2],
+      "questionType": "multipleChoice",
+      "explication": "El 2 y el 5 solo tienen dos divisores positivos: 1 y ellos mismos. El 4 y el 9 son compuestos."
+    }
+  ]
 }
 ```
 
-### Contribuir avanzado
+### Campos de cada pregunta
 
-Si quieres cambiar el código para mejorarlo o refactorizarlo, abre un issue y hablamos si los cambios que propones son útiles para este proyecto.
+| Campo | Uso |
+| --- | --- |
+| `question` | Obligatorio. Texto del enunciado. |
+| `options` | Obligatorio. Lista de textos con las opciones de respuesta. Utiliza al menos dos opciones distintas. |
+| `questionType` | Obligatorio. `singleChoice` para respuesta única o `multipleChoice` para respuesta múltiple. |
+| `correct_option` | Obligatorio en `singleChoice`. Índice de la opción correcta. |
+| `correct_options` | Obligatorio en `multipleChoice`. Lista de índices de las opciones correctas. |
+| `explication` | Opcional. Texto que explica la respuesta correcta; también se admite `explicacion`. |
+| `images` | Opcional. Lista de rutas de imágenes relativas a la carpeta del JSON. |
+
+Los índices empiezan en **0**: `correct_option: 0` indica la primera opción y `correct_options: [0, 2]` indica la primera y la tercera. Define los índices según el orden del JSON; el programa los actualiza al mezclar las respuestas.
+
+### Explicaciones opcionales
+
+La explicación aparece debajo de la respuesta correcta después de pulsar **Enviar respuestas**, tanto si se acierta como si se falla o se deja la pregunta sin responder. Si el campo no existe, es `null` o está vacío, no se muestra nada.
+
+Puedes usar `explication` o `explicacion`; si aparecen ambos, tiene prioridad `explication`. El contenido se muestra como texto, no como HTML. Como las opciones se mezclan, las explicaciones deben referirse al contenido de las respuestas y no a sus letras o posiciones.
+
+### Imágenes opcionales
+
+Para incluir imágenes, añade un campo `images` al objeto de la pregunta, por ejemplo `"images": ["imagenes/esquema.png"]`.
+
+Si la pregunta está en `DXAR/Parcial1/Unit1.json`, la imagen del ejemplo debe existir en `DXAR/Parcial1/imagenes/esquema.png`. Puedes incluir varias rutas en la lista u omitir `images` si la pregunta no necesita imágenes.
+
+## Contribuir
+
+Puedes proponer nuevas preguntas, corregir respuestas o mejorar el programa mediante issues y pull requests en este repositorio. Antes de enviar cambios, revisa el formato de los JSON y genera un examen para comprobar que las preguntas, las imágenes y las explicaciones se muestran correctamente.
+
+Para formatear el código Python, instala las herramientas de desarrollo de [requirements.txt](requirements.txt) y ejecuta Black:
+
+```bash
+python -m pip install -r requirements.txt
+python -m black .
+```
+
+## Créditos y licencia
+
+Este proyecto deriva de [GRIA-TestCreator](https://github.com/AdanAgr/GRIA-TestCreator), el repositorio del que parte esta versión. Se reconoce el trabajo de sus autores y colaboradores en el código y en los bancos de preguntas.
+
+Esta versión incorpora las modificaciones indicadas al inicio y mantiene la licencia **GNU General Public License v3.0 (GPLv3)** del proyecto de origen. Consulta [LICENSE](LICENSE) para leer sus términos completos.
