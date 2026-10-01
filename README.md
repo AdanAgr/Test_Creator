@@ -84,7 +84,7 @@ Estas rutas son ejemplos: crea las carpetas y sus archivos antes de seleccionarl
 
 ## Crear archivos de preguntas
 
-Guarda los archivos en **UTF-8**, con nombres que empiecen por `Unit` y terminen en `.json`, como `Unit1.json` o `Unit2Students.json`. Cada archivo contiene un objeto con la clave `questions` y una lista de preguntas.
+Guarda los archivos en **UTF-8**, con nombres que empiecen por `Unit`, `modulo` o `Final` y terminen en `.json`, como `Unit1.json`, `modulo1_2.json` o `Final1_1.json`. Se buscan también en las subcarpetas. Cada archivo contiene un objeto con la clave `questions` y una lista de preguntas.
 
 Ejemplo completo con los dos tipos de pregunta:
 

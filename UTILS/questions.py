@@ -84,8 +84,14 @@ def questionGenerator(
         # Add the folder and the topic to the question
         for q in choosenQuestions:
             q["folder"] = os.path.dirname(filePath)
+            fileName = os.path.splitext(os.path.basename(filePath))[0]
+            topic = fileName
+            for prefix in ("Unit", "modulo", "Final"):
+                if topic.startswith(prefix):
+                    topic = topic[len(prefix) :]
+                    break
             q["question"] = (
-                q["question"] + " [Tema " + os.path.basename(filePath)[4:-5] + "]"
+                q["question"] + " [Tema " + topic + "]"
             )
 
         # Add the questions to the list that will be returned
@@ -94,31 +100,40 @@ def questionGenerator(
     return questions
 
 
-def findPatternFiles(pattern="Unit*.json", folderPath=".") -> list:
+def findPatternFiles(
+    pattern=("Unit*.json", "modulo*.json", "Final*.json"), folderPath="."
+) -> list:
     """
     Returns a list of files that match the pattern
     in the given folderPath or folders, including subfolders.
     The files are returned with their absolute path, without duplicates.
 
     Args:
-        - pattern (str): The pattern to search for
+        - pattern (str | tuple[str, ...]): One or more patterns to search for
         - folderPath (str | list[str]): One or more folders to search in
 
     Returns:
         - list: The list of files that match the pattern
     """
     folders = [folderPath] if isinstance(folderPath, (str, os.PathLike)) else folderPath
+    patterns = (pattern,) if isinstance(pattern, str) else pattern
     matchingFiles = {}
     for folder in folders:
         if not os.path.isdir(folder):
             raise ValueError(f"No existe la carpeta de preguntas: {folder}")
-        files = glob.glob(
-            os.path.join(glob.escape(os.fspath(folder)), "**", pattern), recursive=True
-        )
-        for file in sorted(files):
-            if os.path.isfile(file):
-                absolutePath = os.path.realpath(file)
-                matchingFiles.setdefault(os.path.normcase(absolutePath), absolutePath)
+        for currentPattern in patterns:
+            files = glob.glob(
+                os.path.join(
+                    glob.escape(os.fspath(folder)), "**", currentPattern
+                ),
+                recursive=True,
+            )
+            for file in sorted(files):
+                if os.path.isfile(file):
+                    absolutePath = os.path.realpath(file)
+                    matchingFiles.setdefault(
+                        os.path.normcase(absolutePath), absolutePath
+                    )
 
     return list(matchingFiles.values())
 
