@@ -1,0 +1,197 @@
+{
+  "questions": [
+    {
+      "question": "Durante una inspección rutinaria, un técnico descubrió que el software instalado en una computadora estaba recopilando en secreto datos sobre sitios web visitados por los usuarios de la computadora. ¿Qué tipo de amenaza está afectando a este equipo?",
+      "options": [
+        "Robo de identidad",
+        "Ataque de día cero",
+        "Spyware",
+        "Ataque DoS"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "El spyware es un tipo de software malicioso que recopila información sobre la actividad del usuario sin su conocimiento, como los sitios web visitados, y puede enviar esos datos a terceros."
+    },
+    {
+      "question": "¿Con qué término se hace referencia a una red que proporciona acceso seguro a las oficinas corporativas por parte de los proveedores, clientes y colaboradores?",
+      "options": [
+        "Extendednet",
+        "Extranet",
+        "Internet",
+        "Intranet"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "Una extranet permite que usuarios externos autorizados, como proveedores, clientes o colaboradores, accedan de forma segura a determinados recursos de una organización."
+    },
+    {
+      "question": "Una gran corporación ha modificado su red para permitir a los usuarios acceder a los recursos de la red desde sus portátiles personales y teléfonos inteligentes. ¿Qué tendencia de creación de redes describe esto?",
+      "options": [
+        "Videoconferencia",
+        "Colaboración en línea",
+        "Computación en la nube",
+        "Traiga su propio dispositivo"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "BYOD, o 'Traiga su propio dispositivo', permite que los usuarios utilicen sus propios portátiles, teléfonos o tabletas para acceder a los recursos de la organización."
+    },
+    {
+      "question": "¿Qué es un ISP?",
+      "options": [
+        "Es el organismo de estandarización que desarrolla estándares de cableado para las redes.",
+        "Es una organización que permite que las personas y empresas se conecten a Internet.",
+        "Es un dispositivo de red que combina la funcionalidad de varios dispositivos diferentes en uno.",
+        "Es un protocolo que establece la forma en que se comunican las computadoras dentro de una red local."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "Un ISP (Internet Service Provider) es un proveedor de servicios de Internet, es decir, una organización que ofrece conectividad a Internet a usuarios y empresas."
+    },
+    {
+      "question": "¿En qué escenario se recomendaría el uso de un WISP?",
+      "options": [
+        "Un cibercafé en una ciudad",
+        "Cualquier hogar con múltiples dispositivos inalámbricos",
+        "Un apartamento en un edificio con acceso por cable a Internet",
+        "Una granja en una zona rural sin acceso por cable de banda ancha"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "Un WISP (Wireless Internet Service Provider) proporciona acceso a Internet mediante enlaces inalámbricos y resulta especialmente útil en zonas rurales o remotas donde no existe infraestructura de banda ancha por cable."
+    },
+    {
+      "question": "¿Qué característica de una red le permite expandirse rápidamente para admitir a nuevos usuarios y aplicaciones sin afectar el rendimiento del servicio que se les proporciona a los usuarios actuales?",
+      "options": [
+        "Calidad de servicio",
+        "Accesibilidad",
+        "Escalabilidad",
+        "Confiabilidad"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "La escalabilidad es la capacidad de una red para crecer, incorporando nuevos usuarios, dispositivos y aplicaciones, sin reducir significativamente el rendimiento que reciben los usuarios existentes."
+    },
+    {
+      "question": "Una universidad construye una nueva residencia estudiantil en su campus. Los trabajadores cavan para instalar las nuevas tuberías de agua de la residencia. Uno de ellos accidentalmente daña el cable de fibra óptica que conecta dos de las residencias existentes al centro de datos del campus. A pesar de que se cortó el cable, los estudiantes de las residencias solo perciben una interrupción muy breve en los servicios de red. ¿Qué característica de la red se demuestra aquí?",
+      "options": [
+        "Escalabilidad",
+        "Calidad de servicio (QoS)",
+        "Seguridad",
+        "Tolerancia a fallas",
+        "Integridad"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "La tolerancia a fallas permite que una red continúe funcionando cuando falla un enlace o dispositivo, normalmente utilizando rutas o componentes redundantes."
+    },
+    {
+      "question": "¿Cuáles de las siguientes son dos características de una red escalable? (Escoja dos opciones.)",
+      "options": [
+        "Crece en tamaño sin afectar a los usuarios existentes.",
+        "No es tan confiable como una red pequeña.",
+        "Se sobrecarga fácilmente con el incremento de tráfico.",
+        "Es adecuada para los dispositivos modulares que permiten expansión.",
+        "Ofrece un número limitado de aplicaciones."
+      ],
+      "correct_options": [
+        0,
+        3
+      ],
+      "questionType": "multipleChoice",
+      "explication": "Una red escalable puede crecer sin afectar significativamente a los usuarios existentes y suele utilizar diseños o dispositivos modulares que facilitan la ampliación de capacidad."
+    },
+    {
+      "question": "¿Qué dispositivo realiza la función de determinar la ruta que deben tomar los mensajes a través de interredes?",
+      "options": [
+        "Un módem DSL",
+        "Un servidor web",
+        "Un router",
+        "Un firewall"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "Un router analiza la información de direccionamiento de los paquetes y determina la mejor ruta para enviarlos entre redes diferentes."
+    },
+    {
+      "question": "¿Qué dos opciones de conexión a Internet no requieren que los cables físicos se ejecuten en el edificio? (Escoja dos opciones.)",
+      "options": [
+        "Red celular",
+        "DSL",
+        "Dial-up",
+        "Red satelital",
+        "Línea arrendada dedicada"
+      ],
+      "correct_options": [
+        0,
+        3
+      ],
+      "questionType": "multipleChoice",
+      "explication": "Las conexiones celulares y satelitales utilizan comunicaciones inalámbricas para proporcionar acceso a Internet, por lo que no requieren una línea física de telecomunicaciones que entre en el edificio."
+    },
+    {
+      "question": "¿A qué tipo de red debe acceder un usuario doméstico para realizar compras en línea?",
+      "options": [
+        "Una extranet",
+        "El Internet",
+        "Una intranet",
+        "Una red de área local"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "Las tiendas en línea y otros servicios públicos se encuentran accesibles a través de Internet, que conecta redes y usuarios a escala global."
+    },
+    {
+      "question": "¿Cómo cambia BYOD la forma en que las empresas implementan las redes?",
+      "options": [
+        "Los usuarios BYOD son responsables de la seguridad de su red, por lo que se reduce la necesidad de políticas de seguridad dentro de la organización.",
+        "BYOD brinda flexibilidad con respecto a cuándo y cómo los usuarios pueden acceder a los recursos de red.",
+        "BYOD requiere que las organizaciones compren PC portátiles en lugar de computadoras de escritorio.",
+        "Los dispositivos BYOD son más costosos que los dispositivos que compran las organizaciones."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "BYOD proporciona mayor flexibilidad porque permite a los usuarios acceder a los recursos de la organización desde sus propios dispositivos y desde diferentes ubicaciones, siempre de acuerdo con las políticas de seguridad establecidas."
+    },
+    {
+      "question": "Un empleado desea acceder a la red de la organización de manera remota y de la forma más segura posible. ¿Qué característica de la red le permitiría a un empleado acceder a la red de la empresa de manera remota y de la forma más segura?",
+      "options": [
+        "BYOD",
+        "IPS",
+        "ACL",
+        "VPN"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "Una VPN crea una conexión segura y cifrada a través de una red pública, permitiendo que un empleado acceda de forma remota a los recursos de la empresa."
+    },
+    {
+      "question": "¿Qué es Internet?",
+      "options": [
+        "Es una red privada para una organización con conexiones LAN y WAN.",
+        "Es una red basada en la tecnología Ethernet.",
+        "Proporciona conexiones a través de las redes globales interconectadas.",
+        "Proporciona acceso a la red a los dispositivos móviles."
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "Internet es una red mundial formada por una gran cantidad de redes interconectadas que permiten la comunicación entre dispositivos de todo el mundo."
+    },
+    {
+      "question": "¿Cuáles de las siguientes son dos funciones de los dispositivos finales en una red? (Escoja dos opciones.)",
+      "options": [
+        "Filtran el flujo de datos para aumentar la seguridad.",
+        "Constituyen la interfaz entre los humanos y la red de comunicación.",
+        "Dirigen los datos por rutas alternativas si fallan los enlaces.",
+        "Proporcionan el canal por el que viaja el mensaje de red.",
+        "Dan origen a los datos que fluyen por la red."
+      ],
+      "correct_options": [
+        1,
+        4
+      ],
+      "questionType": "multipleChoice",
+      "explication": "Los dispositivos finales, como computadoras y teléfonos, sirven de interfaz entre las personas y la red y pueden originar o recibir los datos. El filtrado, el encaminamiento y el medio de transmisión corresponden a otros componentes de la red."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "questions": [
+    {
+      "question": "¿Cuál de los siguientes es el nombre de todas las computadoras conectadas a una red que participan directamente en la comunicación de red?",
+      "options": [
+        "Dispositivos intermediarios",
+        "Medios",
+        "Hosts",
+        "Servidores"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "Los hosts son los dispositivos finales conectados a una red que participan directamente en la comunicación. Algunos ejemplos son computadoras, teléfonos, impresoras y servidores."
+    },
+    {
+      "question": "Cuando los datos se codifican como pulsos de luz, ¿qué medios se utilizan para transmitir los datos?",
+      "options": [
+        "Cable de cobre",
+        "Inalámbrica",
+        "Cable de fibra óptica"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "La fibra óptica transmite los datos mediante pulsos de luz. Los cables de cobre utilizan señales eléctricas y las conexiones inalámbricas utilizan ondas electromagnéticas."
+    },
+    {
+      "question": "¿Cuáles dos dispositivos son dispositivos intermedios?",
+      "options": [
+        "Routers",
+        "Hosts",
+        "Servidores",
+        "Apilados"
+      ],
+      "correct_options": [
+        0,
+        3
+      ],
+      "questionType": "multipleChoice",
+      "explication": "Los routers son dispositivos intermediarios porque encaminan el tráfico entre redes. Los hosts y los servidores son dispositivos finales. Se interpreta 'Apilados' como una referencia a dispositivos de red apilados, como switches, que también actúan como dispositivos intermediarios."
+    }
+  ]
+}

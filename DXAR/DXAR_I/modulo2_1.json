@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué método de acceso sería más apropiado si estuviera en la sala de equipos con un nuevo switch que necesita ser configurado?",
+      "options": [
+        "Telnet/SSH",
+        "Consola",
+        "Aux"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "La consola es el método más apropiado para configurar inicialmente un switch nuevo cuando se está físicamente junto al dispositivo, ya que no requiere que el equipo tenga previamente configurada una conexión de red."
+    },
+    {
+      "question": "¿Qué método de acceso sería más apropiado si su gerente le diera un cable especial y le dijera que lo use para configurar el switch?",
+      "options": [
+        "Telnet/SSH",
+        "Aux",
+        "Consola"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "El cable especial al que se refiere la pregunta es un cable de consola, utilizado para conectar directamente un equipo al puerto de consola del switch y realizar su configuración."
+    },
+    {
+      "question": "¿Qué método de acceso sería el acceso en banda más apropiado al IOS a través de una conexión de red?",
+      "options": [
+        "Aux",
+        "Consola",
+        "Telnet/SSH"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "Telnet y SSH permiten administrar un dispositivo Cisco de forma remota a través de la red. SSH es preferible a Telnet porque cifra la comunicación."
+    },
+    {
+      "question": "¿Qué método de acceso sería el más apropiado si llama a su gerente para decirle que no puede acceder a su router en otra ciudad a través de Internet y él le proporciona la información para acceder al router a través de una conexión telefónica?",
+      "options": [
+        "Consola",
+        "Telnet/SSH",
+        "Aux"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "El puerto AUX permite realizar administración remota fuera de banda mediante una conexión telefónica y un módem, por lo que es útil cuando no se puede acceder al router a través de la red."
+    }
+  ]
+}

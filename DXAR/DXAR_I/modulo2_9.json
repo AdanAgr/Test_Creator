@@ -1,0 +1,185 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué declaración es verdadera sobre el archivo de configuración en ejecución en un dispositivo Cisco IOS?",
+      "options": [
+        "Afecta el funcionamiento del dispositivo inmediatamente cuando se modifica.",
+        "Se guarda automáticamente cuando el router se reinicia.",
+        "Se almacena en NVRAM.",
+        "Se debe eliminar usando el comando erase running-config."
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "La configuración en ejecución (running-config) reside en la RAM y los cambios realizados sobre ella afectan al funcionamiento del dispositivo inmediatamente. No se guarda automáticamente al reiniciar."
+    },
+    {
+      "question": "¿Cuáles son las dos afirmaciones verdaderas con respecto al modo EXEC del usuario? (Escoja dos.)",
+      "options": [
+        "Todos los comandos del router están disponibles.",
+        "Solo se pueden ver algunos aspectos de la configuración del router.",
+        "Se puede acceder al modo de configuración global introduciendo el comando enable.",
+        "Se pueden configurar interfaces y protocolos de routing.",
+        "La petición de entrada del dispositivo para este modo termina con el símbolo '>'."
+      ],
+      "correct_options": [
+        1,
+        4
+      ],
+      "questionType": "multipleChoice",
+      "explication": "El modo EXEC de usuario ofrece acceso limitado a comandos básicos de visualización y su indicador termina en '>'. No permite configurar interfaces ni acceder directamente a la configuración global."
+    },
+    {
+      "question": "¿Qué tipo de acceso está asegurado en un router o switch Cisco con el comando enable secret?",
+      "options": [
+        "Línea de consola",
+        "Puerto auxiliar",
+        "EXEC con privilegios",
+        "Terminales virtuales"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "El comando enable secret protege el acceso al modo EXEC privilegiado mediante una contraseña cifrada."
+    },
+    {
+      "question": "¿Cuál es el SVI predeterminado en un switch Cisco?",
+      "options": [
+        "VLAN1",
+        "VLAN100",
+        "VLAN999",
+        "VLAN99"
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "En un switch Cisco, la interfaz virtual de switch predeterminada es VLAN 1."
+    },
+    {
+      "question": "Cuando se configura un nombre de host a través de la CLI de Cisco, ¿cuáles son las tres convenciones de nomenclatura que forman parte de las pautas? (Elija tres.)",
+      "options": [
+        "El nombre de host debe tener menos 64 caracteres.",
+        "El nombre de host no deber tener espacios.",
+        "El nombre de host debe estar escrito completamente en letras minúsculas.",
+        "El nombre de host debe terminar con un carácter especial.",
+        "El nombre de host debe comenzar con una letra."
+      ],
+      "correct_options": [
+        0,
+        1,
+        4
+      ],
+      "questionType": "multipleChoice",
+      "explication": "Los nombres de host de Cisco deben comenzar con una letra, no contener espacios y tener menos de 64 caracteres. Pueden incluir letras, números y guiones."
+    },
+    {
+      "question": "¿Cuál es la función del shell en un OS?",
+      "options": [
+        "Proporciona los servicios de protección contra intrusiones para el dispositivo.",
+        "Comunica a los usuarios y el kernel.",
+        "Interactúa con el hardware del dispositivo.",
+        "Proporciona servicios de firewall exclusivos."
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "El shell actúa como interfaz entre el usuario y el kernel del sistema operativo, permitiendo introducir comandos y recibir respuestas."
+    },
+    {
+      "question": "Un router con un sistema operativo válido tiene un archivo de configuración almacenado en la NVRAM. El archivo de configuración posee una contraseña secreta de enable, pero ninguna contraseña de consola. Cuando el router inicia, ¿qué modo se muestra?",
+      "options": [
+        "Modo de configuración global",
+        "Modo EXEC del usuario",
+        "Modo EXEC privilegiado",
+        "Modo de configuración"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "Si la consola no tiene contraseña configurada, al iniciar se accede al modo EXEC de usuario. La contraseña enable secret solo se solicita al intentar pasar al modo EXEC privilegiado."
+    },
+    {
+      "question": "Un administrador acaba de cambiar la dirección IP de una interfaz en un dispositivo IOS. ¿Qué más se debe hacer para aplicar esos cambios al dispositivo?",
+      "options": [
+        "Copie la información en el archivo de configuración de inicio a la configuración en ejecución.",
+        "Copie la configuración en ejecución en la configuración de inicio.",
+        "Vuelva a cargar el dispositivo y escriba yes cuando se le pida que guarde la configuración.",
+        "No hay que hacer nada. Los cambios en la configuración de un dispositivo IOS surten efecto tan pronto como el comando se escribe correctamente y se presiona la tecla Intro."
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "Los cambios realizados en la running-config se aplican inmediatamente al introducir correctamente el comando. Guardarlos en startup-config solo es necesario para conservarlos después de un reinicio."
+    },
+    {
+      "question": "¿Qué ubicación de memoria en un router o switch Cisco perderá todo el contenido cuando se reinicie el dispositivo?",
+      "options": [
+        "NVRAM",
+        "ROM",
+        "RAM",
+        "Memoria flash"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "La RAM es memoria volátil, por lo que pierde su contenido cuando el dispositivo se apaga o reinicia. La running-config se almacena en RAM."
+    },
+    {
+      "question": "¿Por qué un técnico ingresaría el comando copy startup-config running-config?",
+      "options": [
+        "Para establecer una configuración modificada como la nueva configuración de inicio.",
+        "Para guardar una configuración activa en la NVRAM.",
+        "Para eliminar todas las configuraciones del switch.",
+        "Para copiar una configuración existente en la RAM."
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "El comando copy startup-config running-config copia la configuración guardada en NVRAM hacia la configuración en ejecución almacenada en RAM."
+    },
+    {
+      "question": "¿Qué funcionalidad proporciona DHCP?",
+      "options": [
+        "Traducir nombres de dominios en direcciones IP",
+        "Administración remota del switch",
+        "Prueba de conectividad de extremo a extremo",
+        "Asignación automática de una dirección IP a cada host"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "DHCP asigna automáticamente parámetros de red a los hosts, como dirección IP, máscara de subred, puerta de enlace predeterminada y servidores DNS."
+    },
+    {
+      "question": "¿Qué dos funciones se proporcionan a los usuarios mediante la función de ayuda sensible al contexto de la CLI de Cisco IOS? (Escoja dos.)",
+      "options": [
+        "Proporcionar un mensaje de error cuando se envía un comando incorrecto",
+        "Mostrar una lista de todos los comandos disponibles en el modo actual",
+        "Permitiendo al usuario completar el resto de un comando abreviado con la tecla TAB",
+        "Determinar qué opción, palabra clave o argumento está disponible para el comando introducido",
+        "Seleccionar el mejor comando para realizar una tarea"
+      ],
+      "correct_options": [
+        1,
+        3
+      ],
+      "questionType": "multipleChoice",
+      "explication": "La ayuda sensible al contexto se activa con '?' y permite mostrar los comandos disponibles en el modo actual o las palabras clave y argumentos válidos para un comando parcialmente introducido."
+    },
+    {
+      "question": "¿Qué ubicación de memoria en un router o switch de Cisco almacena el archivo de configuración de inicio?",
+      "options": [
+        "RAM",
+        "NVRAM",
+        "ROM",
+        "Memoria flash"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "La startup-config se almacena en NVRAM, que conserva su contenido incluso cuando el dispositivo se apaga o reinicia."
+    },
+    {
+      "question": "¿A qué subred pertenece la dirección IP 10.1.100.50 si se utiliza una máscara de subred 255.255.0.0?",
+      "options": [
+        "10.1.100.32",
+        "10.1.0.0",
+        "10.1.100.0",
+        "10.0.0.0"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "La máscara 255.255.0.0 equivale a /16, por lo que los dos primeros octetos identifican la red. Para la dirección 10.1.100.50, la dirección de red es 10.1.0.0."
+    }
+  ]
+}

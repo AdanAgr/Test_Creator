@@ -1,0 +1,17 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué opción describe el código malicioso que se ejecuta en dispositivos de usuario?",
+      "options": [
+        "Día cero o hora cero",
+        "Red privada virtual (VPN)",
+        "Denegación de servicio (DoS)",
+        "Firewall",
+        "Virus, gusano o caballo de Troya"
+      ],
+      "correct_option": 4,
+      "questionType": "singleChoice",
+      "explication": "Los virus, gusanos y caballos de Troya son tipos de software malicioso que pueden ejecutarse en los dispositivos de los usuarios. Un ataque de día cero aprovecha una vulnerabilidad desconocida, una VPN protege conexiones, un ataque DoS busca interrumpir servicios y un firewall filtra tráfico."
+    }
+  ]
+}

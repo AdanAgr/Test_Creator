@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "question": "Cuando los diseñadores siguen los estándares y protocolos aceptados, ¿cuál de las cuatro características básicas de la arquitectura de red se logra?",
+      "options": [
+        "Tolerancia a fallas",
+        "Escalabilidad",
+        "QoS",
+        "Seguridad"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "La escalabilidad permite que una red crezca y admita nuevos usuarios y aplicaciones sin afectar de forma significativa al rendimiento. El uso de estándares y protocolos aceptados facilita ese crecimiento y la interoperabilidad."
+    },
+    {
+      "question": "Confidencialidad, integridad y disponibilidad son requisitos de cuál de las cuatro características básicas de la arquitectura de red?",
+      "options": [
+        "Tolerancia a fallas",
+        "Escalabilidad",
+        "QoS",
+        "Seguridad"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "La seguridad de la red se basa en proteger la confidencialidad, la integridad y la disponibilidad de los datos y servicios."
+    },
+    {
+      "question": "¿Con qué tipo de política, un router puede gestionar el flujo de datos y tráfico de voz, dando prioridad a las comunicaciones de voz si la red experimenta congestión?",
+      "options": [
+        "Tolerancia a fallas",
+        "Escalabilidad",
+        "QoS",
+        "Seguridad"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "QoS (Quality of Service o Calidad de Servicio) permite clasificar y priorizar determinados tipos de tráfico, como la voz, para que reciban un tratamiento preferente cuando existe congestión en la red."
+    },
+    {
+      "question": "El hecho de que haya varias rutas que conducen a un destino se denomina redundancia. ¿Este es un ejemplo de qué característica de la arquitectura de red?",
+      "options": [
+        "Tolerancia a fallas",
+        "Escalabilidad",
+        "QoS",
+        "Seguridad"
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "La tolerancia a fallas utiliza redundancia, como disponer de varias rutas hacia un mismo destino, para que la comunicación pueda continuar aunque falle un enlace o dispositivo."
+    }
+  ]
+}

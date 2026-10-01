@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "question": "¿Cuál es la estructura de una dirección IPv4 llamada?",
+      "options": [
+        "Formato hexadecimal punteado",
+        "Formato decimal punteado",
+        "Formato binario punteado"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "Las direcciones IPv4 se escriben normalmente en formato decimal punteado, formado por cuatro valores decimales separados por puntos."
+    },
+    {
+      "question": "¿Cómo se representa una dirección IPv4?",
+      "options": [
+        "Cuatro números decimales entre 0 y 255 separados por puntos.",
+        "Treinta y dos números hexadecimales separados por puntos.",
+        "Cuatro números binarios entre 0 y 1 separados por dos puntos.",
+        "Treinta y dos números hexadecimales separados por puntos."
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "Una dirección IPv4 tiene 32 bits y se representa habitualmente como cuatro octetos en decimal, cada uno con un valor entre 0 y 255, separados por puntos."
+    },
+    {
+      "question": "¿Qué tipo de interfaz no tiene ningún puerto físico asociado?",
+      "options": [
+        "Interfaz virtual de switch (SVI)",
+        "Consola",
+        "Serial",
+        "Ethernet"
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "Una SVI (Switch Virtual Interface) es una interfaz lógica asociada a una VLAN y no corresponde directamente a un puerto físico del switch."
+    }
+  ]
+}

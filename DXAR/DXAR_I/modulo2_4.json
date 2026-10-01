@@ -1,0 +1,63 @@
+{
+  "questions": [
+    {
+      "question": "¿Cuál es el comando para asignar el nombre «Sw-Floor-2» a un switch?",
+      "options": [
+        "hostname Sw-Floor-2",
+        "name Sw-Floor-2",
+        "host name Sw-Floor-2"
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "En Cisco IOS, el comando hostname seguido del nombre deseado cambia el nombre del dispositivo. Por ejemplo: hostname Sw-Floor-2."
+    },
+    {
+      "question": "¿Cómo se asegura el acceso en modo EXEC privilegiado en un switch?",
+      "options": [
+        "enable class",
+        "enable secret class",
+        "service password-encryption",
+        "secret class"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "El comando enable secret class configura una contraseña cifrada para proteger el acceso al modo EXEC privilegiado. Es preferible a utilizar una contraseña sin cifrar."
+    },
+    {
+      "question": "¿Qué comando habilita la autenticación de contraseña para el acceso en modo EXEC del usuario en un switch?",
+      "options": [
+        "service password-encryption",
+        "login",
+        "secret",
+        "enable secret"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "El comando login, configurado en una línea de acceso como la consola o las líneas VTY, indica al dispositivo que debe solicitar y verificar la contraseña configurada para permitir el acceso."
+    },
+    {
+      "question": "¿Qué comando encripta todas las contraseñas de texto simple en un switch?",
+      "options": [
+        "login",
+        "service password-encryption",
+        "enable secret",
+        "secret"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "El comando service password-encryption cifra las contraseñas que aparecen en texto simple dentro de la configuración del dispositivo, dificultando que puedan leerse directamente."
+    },
+    {
+      "question": "¿Cuál es el comando para configurar un banner que se mostrará al conectarse a un switch?",
+      "options": [
+        "login banner $ Keep out $",
+        "banner $ Keep out $",
+        "banner motd $ Keep out $",
+        "display $ Keep out $"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "El comando banner motd permite configurar un mensaje del día que se muestra cuando un usuario accede al dispositivo. Los caracteres delimitadores, como $, indican el inicio y el final del mensaje."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué modo IOS permite el acceso a todos los comandos y funciones?",
+      "options": [
+        "Modo EXEC privilegiado",
+        "Modo de configuración global",
+        "Modo de subconfiguración de la interfaz.",
+        "Modo de subconfiguración de la línea de consola.",
+        "Modo EXEC de usuario"
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "El modo EXEC privilegiado permite acceder a todos los comandos de supervisión y administración del dispositivo y sirve como punto de entrada a los modos de configuración."
+    },
+    {
+      "question": "¿En qué modo IOS se encuentra si se muestra el Switch(config)# indicado?",
+      "options": [
+        "Modo EXEC privilegiado",
+        "Modo EXEC de usuario",
+        "Modo de subconfiguración de la línea de consola.",
+        "Modo de configuración global",
+        "Modo de subconfiguración de la interfaz"
+      ],
+      "correct_option": 3,
+      "questionType": "singleChoice",
+      "explication": "El indicador Switch(config)# corresponde al modo de configuración global de Cisco IOS. Desde este modo se realizan cambios que afectan a la configuración general del dispositivo."
+    },
+    {
+      "question": "¿En qué modo IOS se encuentra si se muestra el símbolo del switch>?",
+      "options": [
+        "Modo de subconfiguración de la línea de consola.",
+        "Modo EXEC de usuario",
+        "Modo de subconfiguración de la interfaz.",
+        "Modo de configuración global",
+        "Modo EXEC privilegiado"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "El símbolo > en el prompt, como Switch>, indica que el dispositivo está en modo EXEC de usuario, que proporciona acceso limitado a comandos básicos de supervisión."
+    },
+    {
+      "question": "¿Qué dos comandos le devolverían al símbolo EXEC privilegiado independientemente del modo de configuración en el que se encuentre? (Escoja dos.)",
+      "options": [
+        "exit",
+        "enable",
+        "deshabilitar",
+        "end",
+        "CTRL+Z"
+      ],
+      "correct_options": [
+        3,
+        4
+      ],
+      "questionType": "multipleChoice",
+      "explication": "El comando end y la combinación CTRL+Z permiten salir directamente de cualquier modo de configuración y regresar al modo EXEC privilegiado. El comando exit normalmente solo retrocede un nivel."
+    }
+  ]
+}

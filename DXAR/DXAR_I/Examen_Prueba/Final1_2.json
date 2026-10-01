@@ -1,0 +1,228 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué dirección de destino se utiliza en un marco de solicitud ARP?",
+      "options": [
+        "AAAA.AAAA.AAAA",
+        "0.0.0.0",
+        "la dirección física del host de destino",
+        "FFFF.FFFF.FFFF",
+        "255.255.255.255"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 23. Una solicitud ARP se difunde a todos los equipos de la LAN mediante la dirección MAC de broadcast FF:FF:FF:FF:FF:FF (FFFF.FFFF.FFFF en notación Cisco), porque todavía no se conoce la MAC del destinatario.",
+      "correct_option": 3
+    },
+    {
+      "question": "Consulte la ilustración. La tabla MAC del switch contiene la MAC de PC4 en el puerto 1 y la de PC2 en el puerto 3. PC1, conectada al puerto 4, envía una trama dirigida a PC3, conectada al puerto 2. ¿Qué hará el switch con la trama?",
+      "options": [
+        "El switch reenviará la trama a todos los puertos.",
+        "El switch reenviará la trama a todos los puertos, excepto al puerto 4.",
+        "El switch reenviará la trama solamente al puerto 2.",
+        "El switch reenviará la trama solamente a los puertos 1 y 3."
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 24. Como la MAC de PC3 todavía no figura en la tabla de direcciones MAC, el switch realiza una inundación de unicast desconocido hacia todos los puertos de la VLAN salvo el puerto de entrada (4). También puede aprender la dirección MAC de origen de PC1.",
+      "correct_option": 1
+    },
+    {
+      "question": "Consulte la exhibición. La PC1 emite una solicitud ARP porque necesita enviar un paquete a la PC3. En esta situación, ¿qué sucede a continuación?",
+      "options": [
+        "El RT1 reenvía la solicitud de ARP a la PC3.",
+        "El SW1 envía una respuesta de ARP con su dirección MAC Fa0/1.",
+        "El RT1 envía una respuesta de ARP con su propia dirección MAC Fa0/0.",
+        "El RT1 envía una respuesta de ARP con la dirección MAC de la PC3.",
+        "El RT1 envía una respuesta de ARP con su propia dirección MAC Fa0/1."
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 25. PC3 se encuentra en otra red detrás de RT1. PC1 necesita la MAC de su puerta de enlace predeterminada, la interfaz Fa0/0 de RT1 conectada a su red local. El router responde a la solicitud ARP con esa MAC, no reenvía el broadcast ARP a otra red.",
+      "correct_option": 2
+    },
+    {
+      "question": "Un router arranca e ingresa al modo de configuración. ¿Por qué razón?",
+      "options": [
+        "El proceso POST ha detectado un error de hardware.",
+        "Falta el archivo de configuración en NVRAM.",
+        "Cisco IOS no está en la memoria flash.",
+        "La imagen del IOS está dañada."
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 27. Si el router tiene IOS funcional pero no encuentra una configuración de inicio válida en NVRAM, puede iniciar el asistente de configuración inicial (setup mode).",
+      "correct_option": 1
+    },
+    {
+      "question": "Un administrador conecta un nuevo host a la LAN del Registrador. Según la configuración del router Piso, ¿qué dirección IP debe ser la puerta de enlace predeterminada del nuevo host?",
+      "options": [
+        "203.0.113.3",
+        "192.168.234.114",
+        "192.168.235.234",
+        "192.168.235.1",
+        "10.234.235.254"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 28. La interfaz GigabitEthernet0/1 descrita como conectada a la LAN del Registrador tiene la dirección 192.168.235.234/24. El host debe utilizar como gateway la dirección de la interfaz del router situada en su misma red.",
+      "correct_option": 2
+    },
+    {
+      "question": "¿Qué tipo de dirección es 198.133.219.162?",
+      "options": [
+        "Bucle invertido",
+        "Multidifusión",
+        "Público",
+        "link-local"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 29. 198.133.219.162 es una dirección IPv4 unicast pública: no pertenece a los bloques privados, loopback (127.0.0.0/8), link-local (169.254.0.0/16) ni multicast (224.0.0.0/4).",
+      "correct_option": 2
+    },
+    {
+      "question": "¿Qué representa la dirección IP 192.168.1.15/29?",
+      "options": [
+        "Dirección unicast",
+        "Dirección de subred",
+        "Dirección de broadcast",
+        "Dirección multicast"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 30. Una máscara /29 deja bloques de 8 direcciones; la subred 192.168.1.8/29 abarca de .8 a .15. La dirección .15 es la última del bloque, reservada para broadcast.",
+      "correct_option": 2
+    },
+    {
+      "question": "Dada la red 172.18.109.0, ¿qué máscara de subred se usaría si 6 bits de host estuvieran disponibles?",
+      "options": [
+        "255.255.192.0",
+        "255.255.224.0",
+        "255.255.255.248",
+        "255.255.255.252",
+        "255.255.255.192"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 31. IPv4 tiene 32 bits; si se reservan 6 bits para hosts, quedan 26 para el prefijo. /26 corresponde a 255.255.255.192, con 64 direcciones por subred y 62 asignables a hosts.",
+      "correct_option": 4
+    },
+    {
+      "question": "Consulte la ilustración. Un usuario emite netstat -r en una estación de trabajo. ¿Qué dirección IPv6 es una de las direcciones link-local de la estación de trabajo?",
+      "options": [
+        "fe80::/64",
+        "fe80::30d0:115:3f57:fe4c/128",
+        "::1/128",
+        "2001:0:9d38:6ab8:30d0:115:3f57:fe4c/128"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 33. Las direcciones link-local IPv6 comienzan por fe80::/10. La opción fe80::30d0:115:3f57:fe4c/128 representa una dirección concreta de la estación; fe80::/64 es un prefijo de red, ::1 es loopback y 2001:... no es link-local.",
+      "correct_option": 1
+    },
+    {
+      "question": "¿Cuál es el formato comprimido de la dirección IPv6 fe80:0000:0000:0000:0220:0b3f:f0e0:0029?",
+      "options": [
+        "fe80:9ea0::2020:bf:e0:9290",
+        "fe80:9ea:0:2200::fe0:290",
+        "fe80:9ea0::2020:0:bfe0:9290",
+        "fe80::220:b3f:f0e0:29"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 34. Se eliminan los ceros iniciales de cada grupo (0220→220, 0b3f→b3f, 0029→29) y se sustituyen los tres grupos consecutivos 0000 por :: una sola vez.",
+      "correct_option": 3
+    },
+    {
+      "question": "¿Qué tipo de dirección IPv6 está representada por ::1/128?",
+      "options": [
+        "Bucle invertido",
+        "Unidifusión global",
+        "Sin especificar",
+        "EUI-64 generado en el enlace local"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 35. ::1/128 es la dirección IPv6 de loopback o bucle invertido, utilizada por el dispositivo para comunicarse consigo mismo. La dirección no especificada es ::/128.",
+      "correct_option": 0
+    },
+    {
+      "question": "¿Cuáles son los dos mensajes de ICMP que utiliza tanto el protocolo IPv4 como el protocolo IPv6? (Elija dos opciones.)",
+      "options": [
+        "Anuncio de router",
+        "Solicitud de vecino",
+        "Solicitud de router",
+        "Protocolo inalcanzable",
+        "Redireccionamiento de ruta"
+      ],
+      "questionType": "multipleChoice",
+      "explication": "Pregunta 36. Ambas familias de ICMP contemplan mensajes de solicitud de router y redirección de ruta. Atención: ICMPv4 también define anuncios de router (RFC 1256), por lo que la opción «Anuncio de router» también puede considerarse técnicamente válida; la pregunta resulta ambigua si obliga a seleccionar exactamente dos.",
+      "correct_options": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": "Información de red: interfaz LAN del router 172.19.29.254 / fe80:65:ab:dcc1::10; interfaz WAN 198.133.219.33 / 2001:db8:face:39::10; servidor remoto 192.135.250.103. ¿Qué tarea podría intentar realizar un usuario con ping 2001:DB8:Face:39::10?",
+      "options": [
+        "determinar la ruta para llegar al servidor remoto",
+        "verificar que hay conectividad a Internet",
+        "crear un punto de referencia de rendimiento de red para un servidor en la intranet de la empresa",
+        "verificar que existe conectividad dentro de la red local"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 37. El destino del ping es la dirección IPv6 de la interfaz WAN del router. Una respuesta confirma conectividad IP hasta esa interfaz externa, aunque por sí sola no garantiza acceso a toda Internet. Para conocer la ruta se usaría traceroute/tracert.",
+      "correct_option": 1
+    },
+    {
+      "question": "Un técnico de red escribe el comando ping 127.0.0.1 en el símbolo del sistema de un equipo. ¿Qué está tratando de lograr?",
+      "options": [
+        "hacer ping a un equipo host que tiene la dirección IP 127.0.0.1 en la red",
+        "comprobar la dirección IP en la tarjeta de red",
+        "seguimiento de la ruta de acceso a un equipo host en la red y la red tiene la dirección IP 127.0.0.1",
+        "probar la integridad de la pila TCP/IP en el equipo local"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 38. 127.0.0.1 es la dirección IPv4 de loopback. El ping hacia ella prueba el funcionamiento local de la pila TCP/IP sin necesitar conexión a una red externa.",
+      "correct_option": 3
+    },
+    {
+      "question": "Un servidor recibe un paquete del cliente. El paquete tiene el número de puerto de destino 22. ¿Qué servicio solicita el cliente?",
+      "options": [
+        "TFTP",
+        "DNS",
+        "SSH",
+        "DHCP"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 39. El puerto 22/TCP es el puerto habitual de SSH, que permite acceso remoto cifrado. DNS utiliza principalmente 53; DHCP usa UDP 67/68 y TFTP usa UDP 69.",
+      "correct_option": 2
+    },
+    {
+      "question": "¿A qué grupo de puertos TCP pertenece el puerto 414?",
+      "options": [
+        "Registrado",
+        "Conocido",
+        "privado o dinámico",
+        "Pública"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 40. Los puertos 0–1023 se clasifican como puertos bien conocidos; el 414 entra en ese intervalo. Los registrados van de 1024 a 49151 y los dinámicos de 49152 a 65535.",
+      "correct_option": 1
+    },
+    {
+      "question": "Consulte la exhibición. En una captura TCP se destaca el valor del tamaño de la ventana (window size). ¿Qué especifica este valor?",
+      "options": [
+        "La cantidad de datos que se pueden enviar antes de requerir un acuse de recibo.",
+        "Un número aleatorio que se utiliza para establecer una conexión con el protocolo de enlace de tres vías.",
+        "La cantidad total de bits recibidos durante esa sesión TCP.",
+        "La cantidad de datos que se pueden enviar por vez."
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 41. El campo ventana TCP anuncia cuánto dato puede recibir el receptor sin requerir una nueva actualización de ventana; en una explicación introductoria, es el volumen que puede enviarse antes de necesitar los acuses de recibo correspondientes, no el tamaño de un único paquete.",
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué comando se utiliza para consultar manualmente un servidor DNS a fin de resolver un nombre de host específico?",
+      "options": [
+        "tracert",
+        "nslookup",
+        "net",
+        "ipconfig /displaydns"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Pregunta 42. nslookup permite consultar directamente servidores DNS para resolver nombres de dominio y consultar registros. ipconfig /displaydns muestra la caché DNS local; tracert traza rutas.",
+      "correct_option": 1
+    }
+  ]
+}

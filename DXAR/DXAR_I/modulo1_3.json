@@ -1,0 +1,46 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué conexión conecta físicamente el dispositivo final a la red?",
+      "options": [
+        "Interfaz",
+        "Puerto",
+        "NIC"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "La NIC (Network Interface Card o tarjeta de interfaz de red) es el componente que conecta físicamente un dispositivo final, como un ordenador, a la red."
+    },
+    {
+      "question": "¿Qué conexiones son puertos especializados en un dispositivo de red que se conectan a redes individuales?",
+      "options": [
+        "NIC",
+        "Puerto",
+        "Interfaz"
+      ],
+      "correct_option": 2,
+      "questionType": "singleChoice",
+      "explication": "Una interfaz es un puerto especializado de un dispositivo de red que permite conectarlo a una red concreta. Por ejemplo, los routers utilizan interfaces para conectarse a distintas redes."
+    },
+    {
+      "question": "¿Qué tipo de topología de red le permite ver qué dispositivos finales están conectados a qué dispositivos intermediarios y qué medios se utilizan?",
+      "options": [
+        "Topología lógica",
+        "Topología física"
+      ],
+      "correct_option": 0,
+      "questionType": "singleChoice",
+      "explication": "La topología lógica permite representar qué dispositivos finales están conectados a los dispositivos intermediarios y qué medios se utilizan para realizar esas conexiones."
+    },
+    {
+      "question": "¿Qué tipo de topología de red le permite ver la ubicación real de los dispositivos intermediarios y la instalación de cables?",
+      "options": [
+        "Topología lógica",
+        "Topología física"
+      ],
+      "correct_option": 1,
+      "questionType": "singleChoice",
+      "explication": "La topología física muestra la disposición real de la red, incluyendo la ubicación física de los dispositivos intermediarios y cómo están instalados los cables."
+    }
+  ]
+}

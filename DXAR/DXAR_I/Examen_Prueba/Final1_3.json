@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "question": "Dos estudiantes están trabajando en un proyecto de diseño de red. Uno de ellos hace los dibujos, mientras el otro escribe la propuesta. Cuando el dibujo está terminado, el estudiante quiere compartir la carpeta que lo contiene para que el otro estudiante pueda acceder al archivo y copiarlo a una unidad USB. ¿Qué modelo de red se utiliza?",
+      "options": [
+        "Entre pares",
+        "Maestro/esclavo",
+        "Punto a punto",
+        "Basada en clientes"
+      ],
+      "questionType": "singleChoice",
+      "explication": "En una red entre pares (peer-to-peer), los equipos pueden compartir directamente archivos y otros recursos sin depender de un servidor dedicado. En este caso, un estudiante comparte una carpeta de su equipo con otro.",
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué servicio ofrece POP3?",
+      "options": [
+        "Una aplicación que permite chatear en tiempo real entre usuarios remotos.",
+        "Utiliza el cifrado para proporcionar acceso remoto seguro a los dispositivos y servidores de red.",
+        "Recupera el correo electrónico del servidor descargándolo a la aplicación de correo local del cliente.",
+        "Permite el acceso remoto a dispositivos de red y servidores."
+      ],
+      "questionType": "singleChoice",
+      "explication": "POP3 (Post Office Protocol versión 3) permite que un cliente descargue mensajes desde un servidor de correo. No es un servicio de mensajería instantánea ni de administración remota.",
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuáles son las dos maneras de proteger una computadora del malware? (Elija dos opciones.)",
+      "options": [
+        "Vacíe la caché del navegador.",
+        "Mantenga el software actualizado.",
+        "Desfragmente el disco duro.",
+        "Elimine el software sin utilizar.",
+        "Use software antivirus."
+      ],
+      "questionType": "multipleChoice",
+      "explication": "Mantener el software actualizado corrige vulnerabilidades que podría explotar el malware. El antivirus ayuda a detectar, bloquear y eliminar software malicioso. Vaciar la caché o desfragmentar el disco no son defensas equivalentes.",
+      "correct_options": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": "Un administrador de red emite el comando login block-for 180 attempts 2 within 30 en un router. ¿Qué amenaza intenta evitar el administrador de red?",
+      "options": [
+        "Un usuario que intenta adivinar una contraseña para acceder al router.",
+        "Un dispositivo que intenta inspeccionar el tráfico en un enlace.",
+        "Una persona no identificada que intenta acceder a la sala de equipos de red.",
+        "Un gusano que intenta acceder a otra parte de la red."
+      ],
+      "questionType": "singleChoice",
+      "explication": "El comando bloquea los intentos de inicio de sesión durante 180 segundos si se producen 2 intentos fallidos dentro de 30 segundos. Mitiga intentos reiterados de adivinar contraseñas por fuerza bruta.",
+      "correct_option": 0
+    },
+    {
+      "question": "¿Qué declaración describe las características de filtrado de paquetes y firewalls con estado en relación con el modelo OSI?",
+      "options": [
+        "Un firewall de filtrado de paquetes utiliza información de capa de sesión para realizar un seguimiento del estado de una conexión, mientras que un firewall con estado utiliza información de capa de aplicación para realizar un seguimiento del estado de una conexión.",
+        "Un firewall de filtrado de paquetes normalmente puede filtrar hasta la capa de transporte, mientras que un firewall con estado puede filtrar hasta la capa de sesión.",
+        "Los firewalls con estado y filtrado de paquetes pueden filtrar en la capa de aplicación.",
+        "Un firewall con estado puede filtrar la información de la capa de aplicación, mientras que un firewall con filtrado de paquetes no puede filtrar más allá de la capa de red."
+      ],
+      "questionType": "singleChoice",
+      "explication": "Un firewall de filtrado tradicional utiliza información de red y transporte (por ejemplo, direcciones IP y puertos). Un firewall con estado además mantiene información sobre las sesiones o conexiones y su estado. Esto no implica que todo firewall con estado inspeccione el contenido de las aplicaciones.",
+      "correct_option": 1
+    },
+    {
+      "question": "Los empleados y residentes de Ciscoville no pueden acceder a Internet ni a ningún servicio remoto basado en web. Los trabajadores de TI determinan rápidamente que el firewall de la ciudad se está inundando con tanto tráfico que se está produciendo una interrupción de la conectividad a Internet. ¿Qué tipo de ataque se está lanzando en Ciscoville?",
+      "options": [
+        "acceso",
+        "DoS",
+        "Reconocimiento",
+        "Caballo de Troya"
+      ],
+      "questionType": "singleChoice",
+      "explication": "Un ataque de denegación de servicio (DoS) intenta agotar recursos de red o servidores mediante un volumen excesivo de tráfico o solicitudes, impidiendo el acceso legítimo a los servicios.",
+      "correct_option": 1
+    },
+    {
+      "question": "Sólo los empleados conectados a interfaces IPv6 tienen dificultades para conectarse a redes remotas. El analista desea comprobar que se ha habilitado el enrutamiento IPv6. ¿Cuál es el mejor comando para realizar la tarea?",
+      "options": [
+        "show running-config",
+        "show ip nat translations",
+        "show interfaces",
+        "copy running-config startup-config"
+      ],
+      "questionType": "singleChoice",
+      "explication": "show running-config permite comprobar si está configurado ipv6 unicast-routing, el comando que habilita el enrutamiento IPv6 en un router Cisco. Las otras opciones no verifican esa configuración.",
+      "correct_option": 0
+    },
+    {
+      "question": "Una pequeña empresa de publicidad tiene un servidor web que proporciona un servicio empresarial crítico. La compañía se conecta a Internet a través de un servicio de línea arrendada a un ISP. ¿Cuál es el enfoque que mejor proporcionaría redundancia rentable para la conexión a Internet?",
+      "options": [
+        "Agregue varias conexiones entre los switches y el router perimetral.",
+        "Agregue una segunda NIC al servidor web.",
+        "Agregue una conexión a Internet a través de una línea DSL a otro ISP.",
+        "Agregue otro servidor web para preparar la compatibilidad con conmutación por error."
+      ],
+      "questionType": "singleChoice",
+      "explication": "Una segunda conexión de acceso a Internet por DSL con otro proveedor aporta una ruta alternativa cuando falla la línea arrendada o su ISP. Las otras medidas no eliminan ese único punto de fallo del acceso a Internet.",
+      "correct_option": 2
+    },
+    {
+      "question": "¿Cuáles son los dos comandos que se pueden utilizar para comprobar si la resolución de nombres DNS funciona correctamente en un equipo Windows? (Elija dos opciones.)",
+      "options": [
+        "net cisco.com",
+        "nbtstat cisco.com",
+        "ping cisco.com",
+        "nslookup cisco.com",
+        "ipconfig /flushdns"
+      ],
+      "questionType": "multipleChoice",
+      "explication": "nslookup consulta la resolución DNS de un nombre. ping cisco.com también intenta resolver el nombre antes de enviar solicitudes ICMP; incluso si ICMP está bloqueado, puede verse si la resolución ha tenido éxito. ipconfig /flushdns solo limpia la caché local.",
+      "correct_options": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": "¿Qué sucede cuando un switch recibe una trama y el valor de CRC calculado difiere del valor del campo FCS?",
+      "options": [
+        "El switch coloca el nuevo valor de CRC en el campo FCS y reenvía la trama.",
+        "El switch satura todos los puertos con la trama, excepto el puerto a través del cual llegó la trama, para notificar a los hosts del error.",
+        "El switch descarta la trama.",
+        "El switch notifica al origen de la trama defectuosa."
+      ],
+      "questionType": "singleChoice",
+      "explication": "El campo FCS permite detectar alteraciones en una trama Ethernet mediante CRC. Si el CRC calculado no coincide con el recibido, el switch considera la trama corrupta y la descarta.",
+      "correct_option": 2
+    },
+    {
+      "question": "¿Qué dos problemas pueden causar tanto runts como gigantes en redes Ethernet? (Elija dos opciones.)",
+      "options": [
+        "una NIC que funciona mal",
+        "utilizando el tipo de cable incorrecto",
+        "operaciones semidúplex",
+        "interferencia eléctrica en interfaces seriales",
+        "Errores de CRC"
+      ],
+      "questionType": "multipleChoice",
+      "explication": "Una tarjeta de red defectuosa o problemas de cableado pueden producir tramas Ethernet de tamaño anómalo. Los runts son tramas menores que el tamaño mínimo válido y los gigantes superan el máximo permitido. Los errores CRC pueden ser un síntoma, no necesariamente la causa.",
+      "correct_options": [
+        0,
+        1
+      ]
+    },
+    {
+      "question": "Dos ingenieros de red están discutiendo los métodos utilizados para reenviar tramas a través de un switch. ¿Cuál es un concepto importante relacionado con el método de corte de conmutación?",
+      "options": [
+        "La conmutación de avance rápido se puede ver como un compromiso entre la conmutación de almacenamiento y reenvío y la conmutación sin fragmentos.",
+        "Los paquetes se pueden retransmitir con errores cuando se utiliza la conmutación de avance rápido.",
+        "La conmutación sin fragmentos es el método típico de conmutación de corte.",
+        "La conmutación sin fragmentos ofrece el nivel más bajo de latencia."
+      ],
+      "questionType": "singleChoice",
+      "explication": "En la conmutación de corte de avance rápido (fast-forward), el switch comienza a reenviar la trama antes de recibirla completa, por lo que puede transmitir tramas con errores que aún no ha detectado mediante FCS. El método fragment-free espera al menos los primeros 64 bytes.",
+      "correct_option": 1
+    },
+    {
+      "question": "¿Qué dos funciones se realizan en la subcapa LLC de la capa de enlace de datos OSI para facilitar la comunicación Ethernet? (Elija dos opciones.)",
+      "options": [
+        "agrega información de control Ethernet a los datos de protocolo de red",
+        "agrega información en la trama Ethernet que identifica cual protocolo de la capa de red está siendo encapsulado en la trama.",
+        "aplica direcciones MAC de origen y destino a la trama Ethernet",
+        "integra flujos de Capa 2 entre 10 Gigabit Ethernet sobre fibra y 1 Gigabit Ethernet sobre cobre",
+        "implementa CSMA/CD sobre medios semidúplex compartidos heredados"
+      ],
+      "questionType": "multipleChoice",
+      "explication": "La subcapa LLC establece la interfaz con la capa de red y añade información de control que identifica el protocolo de capa superior encapsulado. El direccionamiento MAC y el control de acceso al medio (como CSMA/CD) pertenecen a la subcapa MAC. La primera opción usa una terminología algo amplia, pero alude a este control LLC.",
+      "correct_options": [
+        0,
+        1
+      ]
+    }
+  ]
+}
