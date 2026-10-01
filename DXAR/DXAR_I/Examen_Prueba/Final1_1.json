@@ -12,10 +12,7 @@
       ],
       "questionType": "multipleChoice",
       "explication": "Los controladores de LAN inalámbrica son dispositivos intermediarios que gestionan la conectividad inalámbrica. La segunda opción figura como «Dispositivo» en la captura, sin especificar el tipo de dispositivo; se ha seleccionado provisionalmente porque la pregunta exige dos respuestas, pero debe revisarse frente al original. Los escáneres, consolas y robots son dispositivos finales.",
-      "correct_options": [
-        0,
-        1
-      ]
+      "correct_options": [0, 1]
     },
     {
       "question": "¿Qué declaración describe la seguridad de la red?",
@@ -79,12 +76,7 @@
     },
     {
       "question": "¿Cuál es la PDU que se procesa cuando un equipo host desencapsula un mensaje en la capa de transporte del modelo TCP/IP?",
-      "options": [
-        "Segmento",
-        "Trama",
-        "Paquete",
-        "Bits"
-      ],
+      "options": ["Segmento", "Trama", "Paquete", "Bits"],
       "questionType": "singleChoice",
       "explication": "En la capa de transporte, la PDU se denomina segmento para TCP. La trama corresponde a enlace de datos, el paquete a Internet/red y los bits a la capa física.",
       "correct_option": 0
@@ -102,27 +94,14 @@
       ],
       "questionType": "multipleChoice",
       "explication": "La capa de aplicación de TCP/IP abarca las funciones de aplicación, presentación y sesión del modelo OSI.",
-      "correct_options": [
-        1,
-        4,
-        6
-      ]
+      "correct_options": [1, 4, 6]
     },
     {
       "question": "¿Cuáles son las dos capas del modelo OSI que tienen la misma funcionalidad que las dos capas del modelo TCP/IP? (Elija dos opciones.)",
-      "options": [
-        "Enlace de datos",
-        "Sesión",
-        "Física",
-        "Transporte",
-        "Red"
-      ],
+      "options": ["Enlace de datos", "Sesión", "Física", "Transporte", "Red"],
       "questionType": "multipleChoice",
       "explication": "Las capas de transporte y red del modelo OSI se corresponden funcionalmente con las capas de transporte e Internet de TCP/IP. Enlace de datos y física se agrupan en acceso a la red de TCP/IP.",
-      "correct_options": [
-        3,
-        4
-      ]
+      "correct_options": [3, 4]
     },
     {
       "question": "¿Cuáles son las dos afirmaciones que describen las características de los cables de fibra óptica? (Elija dos opciones.)",
@@ -135,10 +114,7 @@
       ],
       "questionType": "multipleChoice",
       "explication": "La fibra óptica es habitual en enlaces troncales (backbone) y transmite señales luminosas mediante un material dieléctrico, por lo que no conduce corriente eléctrica. La opción sobre LED y láser invierte las asociaciones típicas.",
-      "correct_options": [
-        0,
-        4
-      ]
+      "correct_options": [0, 4]
     },
     {
       "question": "¿Qué término de capa física OSI describe la medida de la transferencia de bits a través de un medio durante un período de tiempo determinado?",
@@ -154,40 +130,21 @@
     },
     {
       "question": "Consulte la ilustración: los enlaces PC-servidor tienen velocidades de 10 Mb/s, 100 Mb/s, 128 kb/s, 100 Mb/s y 1000 Mb/s. ¿Cuál es el rendimiento máximo posible entre la PC y el servidor?",
-      "options": [
-        "10 Mb/s",
-        "128 kb/s",
-        "100 Mb/s",
-        "1000 Mb/s"
-      ],
+      "options": ["10 Mb/s", "128 kb/s", "100 Mb/s", "1000 Mb/s"],
       "questionType": "singleChoice",
       "explication": "El enlace más lento de toda la ruta es el de 128 kb/s, que actúa como cuello de botella y limita el rendimiento máximo extremo a extremo.",
       "correct_option": 1
     },
     {
       "question": "¿Cuáles dos acrónimos representan las subcapas de enlace de datos en las que Ethernet confía para operar? (Elija dos opciones.)",
-      "options": [
-        "SFD",
-        "LLC",
-        "CSMA",
-        "MAC",
-        "FCS"
-      ],
+      "options": ["SFD", "LLC", "CSMA", "MAC", "FCS"],
       "questionType": "multipleChoice",
       "explication": "La capa de enlace de datos se divide en LLC (Logical Link Control) y MAC (Media Access Control). CSMA es un método de acceso al medio, mientras que SFD y FCS son campos de trama.",
-      "correct_options": [
-        1,
-        3
-      ]
+      "correct_options": [1, 3]
     },
     {
       "question": "Un equipo de redes compara las topologías para conectarse a medios compartidos. ¿Qué topología física es un ejemplo de una topología híbrida para una LAN?",
-      "options": [
-        "Malla parcial",
-        "Bus",
-        "Estrella extendida",
-        "Anillo"
-      ],
+      "options": ["Malla parcial", "Bus", "Estrella extendida", "Anillo"],
       "questionType": "singleChoice",
       "explication": "Una estrella extendida conecta varias topologías en estrella mediante dispositivos centrales, por lo que es un ejemplo habitual de topología híbrida.",
       "correct_option": 2

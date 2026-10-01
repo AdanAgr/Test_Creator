@@ -35,10 +35,7 @@
       ],
       "questionType": "multipleChoice",
       "explication": "Mantener el software actualizado corrige vulnerabilidades que podría explotar el malware. El antivirus ayuda a detectar, bloquear y eliminar software malicioso. Vaciar la caché o desfragmentar el disco no son defensas equivalentes.",
-      "correct_options": [
-        1,
-        4
-      ]
+      "correct_options": [1, 4]
     },
     {
       "question": "Un administrador de red emite el comando login block-for 180 attempts 2 within 30 en un router. ¿Qué amenaza intenta evitar el administrador de red?",
@@ -66,12 +63,7 @@
     },
     {
       "question": "Los empleados y residentes de Ciscoville no pueden acceder a Internet ni a ningún servicio remoto basado en web. Los trabajadores de TI determinan rápidamente que el firewall de la ciudad se está inundando con tanto tráfico que se está produciendo una interrupción de la conectividad a Internet. ¿Qué tipo de ataque se está lanzando en Ciscoville?",
-      "options": [
-        "acceso",
-        "DoS",
-        "Reconocimiento",
-        "Caballo de Troya"
-      ],
+      "options": ["acceso", "DoS", "Reconocimiento", "Caballo de Troya"],
       "questionType": "singleChoice",
       "explication": "Un ataque de denegación de servicio (DoS) intenta agotar recursos de red o servidores mediante un volumen excesivo de tráfico o solicitudes, impidiendo el acceso legítimo a los servicios.",
       "correct_option": 1
@@ -111,10 +103,7 @@
       ],
       "questionType": "multipleChoice",
       "explication": "nslookup consulta la resolución DNS de un nombre. ping cisco.com también intenta resolver el nombre antes de enviar solicitudes ICMP; incluso si ICMP está bloqueado, puede verse si la resolución ha tenido éxito. ipconfig /flushdns solo limpia la caché local.",
-      "correct_options": [
-        2,
-        3
-      ]
+      "correct_options": [2, 3]
     },
     {
       "question": "¿Qué sucede cuando un switch recibe una trama y el valor de CRC calculado difiere del valor del campo FCS?",
@@ -139,10 +128,7 @@
       ],
       "questionType": "multipleChoice",
       "explication": "Una tarjeta de red defectuosa o problemas de cableado pueden producir tramas Ethernet de tamaño anómalo. Los runts son tramas menores que el tamaño mínimo válido y los gigantes superan el máximo permitido. Los errores CRC pueden ser un síntoma, no necesariamente la causa.",
-      "correct_options": [
-        0,
-        1
-      ]
+      "correct_options": [0, 1]
     },
     {
       "question": "Dos ingenieros de red están discutiendo los métodos utilizados para reenviar tramas a través de un switch. ¿Cuál es un concepto importante relacionado con el método de corte de conmutación?",
@@ -167,10 +153,7 @@
       ],
       "questionType": "multipleChoice",
       "explication": "La subcapa LLC establece la interfaz con la capa de red y añade información de control que identifica el protocolo de capa superior encapsulado. El direccionamiento MAC y el control de acceso al medio (como CSMA/CD) pertenecen a la subcapa MAC. La primera opción usa una terminología algo amplia, pero alude a este control LLC.",
-      "correct_options": [
-        0,
-        1
-      ]
+      "correct_options": [0, 1]
     }
   ]
 }

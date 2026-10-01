@@ -2,33 +2,21 @@
   "questions": [
     {
       "question": "¿Qué característica es una buena herramienta de conferencias para usar con otras personas que se encuentran en otro lugar de tu ciudad o incluso en otro país?",
-      "options": [
-        "BYOD",
-        "Computación en la nube",
-        "Comunicaciones de video"
-      ],
+      "options": ["BYOD", "Computación en la nube", "Comunicaciones de video"],
       "correct_option": 2,
       "questionType": "singleChoice",
       "explication": "Las comunicaciones de video permiten realizar reuniones y conferencias a distancia con personas que se encuentran en otras ubicaciones, incluso en otras ciudades o países."
     },
     {
       "question": "¿Qué característica describe el uso de herramientas personales para acceder a la información y comunicarse a través de una red empresarial o de campus?",
-      "options": [
-        "BYOD",
-        "Computación en la nube",
-        "Comunicaciones de video"
-      ],
+      "options": ["BYOD", "Computación en la nube", "Comunicaciones de video"],
       "correct_option": 0,
       "questionType": "singleChoice",
       "explication": "BYOD (Bring Your Own Device) permite a los usuarios utilizar sus propios dispositivos personales, como portátiles, tabletas o teléfonos, para acceder a recursos de una red empresarial o de campus."
     },
     {
       "question": "¿Qué característica contiene opciones como Público, Privado, Personalizado e Híbrido?",
-      "options": [
-        "Comunicaciones de video",
-        "Computación en la nube",
-        "BYOD"
-      ],
+      "options": ["Comunicaciones de video", "Computación en la nube", "BYOD"],
       "correct_option": 1,
       "questionType": "singleChoice",
       "explication": "La computación en la nube puede implementarse mediante distintos modelos, como nube pública, privada, híbrida o personalizada, según las necesidades de la organización."

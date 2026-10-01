@@ -90,9 +90,7 @@ def questionGenerator(
                 if topic.startswith(prefix):
                     topic = topic[len(prefix) :]
                     break
-            q["question"] = (
-                q["question"] + " [Tema " + topic + "]"
-            )
+            q["question"] = q["question"] + " [Tema " + topic + "]"
 
         # Add the questions to the list that will be returned
         questions.extend(choosenQuestions)
@@ -123,9 +121,7 @@ def findPatternFiles(
             raise ValueError(f"No existe la carpeta de preguntas: {folder}")
         for currentPattern in patterns:
             files = glob.glob(
-                os.path.join(
-                    glob.escape(os.fspath(folder)), "**", currentPattern
-                ),
+                os.path.join(glob.escape(os.fspath(folder)), "**", currentPattern),
                 recursive=True,
             )
             for file in sorted(files):

@@ -41,17 +41,8 @@
     },
     {
       "question": "¿Qué dos comandos le devolverían al símbolo EXEC privilegiado independientemente del modo de configuración en el que se encuentre? (Escoja dos.)",
-      "options": [
-        "exit",
-        "enable",
-        "deshabilitar",
-        "end",
-        "CTRL+Z"
-      ],
-      "correct_options": [
-        3,
-        4
-      ],
+      "options": ["exit", "enable", "deshabilitar", "end", "CTRL+Z"],
+      "correct_options": [3, 4],
       "questionType": "multipleChoice",
       "explication": "El comando end y la combinación CTRL+Z permiten salir directamente de cualquier modo de configuración y regresar al modo EXEC privilegiado. El comando exit normalmente solo retrocede un nivel."
     }

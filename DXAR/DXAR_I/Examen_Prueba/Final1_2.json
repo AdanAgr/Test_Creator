@@ -65,12 +65,7 @@
     },
     {
       "question": "¿Qué tipo de dirección es 198.133.219.162?",
-      "options": [
-        "Bucle invertido",
-        "Multidifusión",
-        "Público",
-        "link-local"
-      ],
+      "options": ["Bucle invertido", "Multidifusión", "Público", "link-local"],
       "questionType": "singleChoice",
       "explication": "Pregunta 29. 198.133.219.162 es una dirección IPv4 unicast pública: no pertenece a los bloques privados, loopback (127.0.0.0/8), link-local (169.254.0.0/16) ni multicast (224.0.0.0/4).",
       "correct_option": 2
@@ -147,10 +142,7 @@
       ],
       "questionType": "multipleChoice",
       "explication": "Pregunta 36. Ambas familias de ICMP contemplan mensajes de solicitud de router y redirección de ruta. Atención: ICMPv4 también define anuncios de router (RFC 1256), por lo que la opción «Anuncio de router» también puede considerarse técnicamente válida; la pregunta resulta ambigua si obliga a seleccionar exactamente dos.",
-      "correct_options": [
-        2,
-        4
-      ]
+      "correct_options": [2, 4]
     },
     {
       "question": "Información de red: interfaz LAN del router 172.19.29.254 / fe80:65:ab:dcc1::10; interfaz WAN 198.133.219.33 / 2001:db8:face:39::10; servidor remoto 192.135.250.103. ¿Qué tarea podría intentar realizar un usuario con ping 2001:DB8:Face:39::10?",
@@ -178,24 +170,14 @@
     },
     {
       "question": "Un servidor recibe un paquete del cliente. El paquete tiene el número de puerto de destino 22. ¿Qué servicio solicita el cliente?",
-      "options": [
-        "TFTP",
-        "DNS",
-        "SSH",
-        "DHCP"
-      ],
+      "options": ["TFTP", "DNS", "SSH", "DHCP"],
       "questionType": "singleChoice",
       "explication": "Pregunta 39. El puerto 22/TCP es el puerto habitual de SSH, que permite acceso remoto cifrado. DNS utiliza principalmente 53; DHCP usa UDP 67/68 y TFTP usa UDP 69.",
       "correct_option": 2
     },
     {
       "question": "¿A qué grupo de puertos TCP pertenece el puerto 414?",
-      "options": [
-        "Registrado",
-        "Conocido",
-        "privado o dinámico",
-        "Pública"
-      ],
+      "options": ["Registrado", "Conocido", "privado o dinámico", "Pública"],
       "questionType": "singleChoice",
       "explication": "Pregunta 40. Los puertos 0–1023 se clasifican como puertos bien conocidos; el 414 entra en ese intervalo. Los registrados van de 1024 a 49151 y los dinámicos de 49152 a 65535.",
       "correct_option": 1
@@ -214,12 +196,7 @@
     },
     {
       "question": "¿Qué comando se utiliza para consultar manualmente un servidor DNS a fin de resolver un nombre de host específico?",
-      "options": [
-        "tracert",
-        "nslookup",
-        "net",
-        "ipconfig /displaydns"
-      ],
+      "options": ["tracert", "nslookup", "net", "ipconfig /displaydns"],
       "questionType": "singleChoice",
       "explication": "Pregunta 42. nslookup permite consultar directamente servidores DNS para resolver nombres de dominio y consultar registros. ipconfig /displaydns muestra la caché DNS local; tracert traza rutas.",
       "correct_option": 1

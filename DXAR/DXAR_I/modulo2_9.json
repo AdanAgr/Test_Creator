@@ -21,10 +21,7 @@
         "Se pueden configurar interfaces y protocolos de routing.",
         "La petición de entrada del dispositivo para este modo termina con el símbolo '>'."
       ],
-      "correct_options": [
-        1,
-        4
-      ],
+      "correct_options": [1, 4],
       "questionType": "multipleChoice",
       "explication": "El modo EXEC de usuario ofrece acceso limitado a comandos básicos de visualización y su indicador termina en '>'. No permite configurar interfaces ni acceder directamente a la configuración global."
     },
@@ -42,12 +39,7 @@
     },
     {
       "question": "¿Cuál es el SVI predeterminado en un switch Cisco?",
-      "options": [
-        "VLAN1",
-        "VLAN100",
-        "VLAN999",
-        "VLAN99"
-      ],
+      "options": ["VLAN1", "VLAN100", "VLAN999", "VLAN99"],
       "correct_option": 0,
       "questionType": "singleChoice",
       "explication": "En un switch Cisco, la interfaz virtual de switch predeterminada es VLAN 1."
@@ -61,11 +53,7 @@
         "El nombre de host debe terminar con un carácter especial.",
         "El nombre de host debe comenzar con una letra."
       ],
-      "correct_options": [
-        0,
-        1,
-        4
-      ],
+      "correct_options": [0, 1, 4],
       "questionType": "multipleChoice",
       "explication": "Los nombres de host de Cisco deben comenzar con una letra, no contener espacios y tener menos de 64 caracteres. Pueden incluir letras, números y guiones."
     },
@@ -107,12 +95,7 @@
     },
     {
       "question": "¿Qué ubicación de memoria en un router o switch Cisco perderá todo el contenido cuando se reinicie el dispositivo?",
-      "options": [
-        "NVRAM",
-        "ROM",
-        "RAM",
-        "Memoria flash"
-      ],
+      "options": ["NVRAM", "ROM", "RAM", "Memoria flash"],
       "correct_option": 2,
       "questionType": "singleChoice",
       "explication": "La RAM es memoria volátil, por lo que pierde su contenido cuando el dispositivo se apaga o reinicia. La running-config se almacena en RAM."
@@ -150,33 +133,20 @@
         "Determinar qué opción, palabra clave o argumento está disponible para el comando introducido",
         "Seleccionar el mejor comando para realizar una tarea"
       ],
-      "correct_options": [
-        1,
-        3
-      ],
+      "correct_options": [1, 3],
       "questionType": "multipleChoice",
       "explication": "La ayuda sensible al contexto se activa con '?' y permite mostrar los comandos disponibles en el modo actual o las palabras clave y argumentos válidos para un comando parcialmente introducido."
     },
     {
       "question": "¿Qué ubicación de memoria en un router o switch de Cisco almacena el archivo de configuración de inicio?",
-      "options": [
-        "RAM",
-        "NVRAM",
-        "ROM",
-        "Memoria flash"
-      ],
+      "options": ["RAM", "NVRAM", "ROM", "Memoria flash"],
       "correct_option": 1,
       "questionType": "singleChoice",
       "explication": "La startup-config se almacena en NVRAM, que conserva su contenido incluso cuando el dispositivo se apaga o reinicia."
     },
     {
       "question": "¿A qué subred pertenece la dirección IP 10.1.100.50 si se utiliza una máscara de subred 255.255.0.0?",
-      "options": [
-        "10.1.100.32",
-        "10.1.0.0",
-        "10.1.100.0",
-        "10.0.0.0"
-      ],
+      "options": ["10.1.100.32", "10.1.0.0", "10.1.100.0", "10.0.0.0"],
       "correct_option": 1,
       "questionType": "singleChoice",
       "explication": "La máscara 255.255.0.0 equivale a /16, por lo que los dos primeros octetos identifican la red. Para la dirección 10.1.100.50, la dirección de red es 10.1.0.0."

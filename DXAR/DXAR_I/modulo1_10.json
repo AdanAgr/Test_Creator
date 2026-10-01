@@ -14,12 +14,7 @@
     },
     {
       "question": "¿Con qué término se hace referencia a una red que proporciona acceso seguro a las oficinas corporativas por parte de los proveedores, clientes y colaboradores?",
-      "options": [
-        "Extendednet",
-        "Extranet",
-        "Internet",
-        "Intranet"
-      ],
+      "options": ["Extendednet", "Extranet", "Internet", "Intranet"],
       "correct_option": 1,
       "questionType": "singleChoice",
       "explication": "Una extranet permite que usuarios externos autorizados, como proveedores, clientes o colaboradores, accedan de forma segura a determinados recursos de una organización."
@@ -94,10 +89,7 @@
         "Es adecuada para los dispositivos modulares que permiten expansión.",
         "Ofrece un número limitado de aplicaciones."
       ],
-      "correct_options": [
-        0,
-        3
-      ],
+      "correct_options": [0, 3],
       "questionType": "multipleChoice",
       "explication": "Una red escalable puede crecer sin afectar significativamente a los usuarios existentes y suele utilizar diseños o dispositivos modulares que facilitan la ampliación de capacidad."
     },
@@ -122,10 +114,7 @@
         "Red satelital",
         "Línea arrendada dedicada"
       ],
-      "correct_options": [
-        0,
-        3
-      ],
+      "correct_options": [0, 3],
       "questionType": "multipleChoice",
       "explication": "Las conexiones celulares y satelitales utilizan comunicaciones inalámbricas para proporcionar acceso a Internet, por lo que no requieren una línea física de telecomunicaciones que entre en el edificio."
     },
@@ -155,12 +144,7 @@
     },
     {
       "question": "Un empleado desea acceder a la red de la organización de manera remota y de la forma más segura posible. ¿Qué característica de la red le permitiría a un empleado acceder a la red de la empresa de manera remota y de la forma más segura?",
-      "options": [
-        "BYOD",
-        "IPS",
-        "ACL",
-        "VPN"
-      ],
+      "options": ["BYOD", "IPS", "ACL", "VPN"],
       "correct_option": 3,
       "questionType": "singleChoice",
       "explication": "Una VPN crea una conexión segura y cifrada a través de una red pública, permitiendo que un empleado acceda de forma remota a los recursos de la empresa."
@@ -186,10 +170,7 @@
         "Proporcionan el canal por el que viaja el mensaje de red.",
         "Dan origen a los datos que fluyen por la red."
       ],
-      "correct_options": [
-        1,
-        4
-      ],
+      "correct_options": [1, 4],
       "questionType": "multipleChoice",
       "explication": "Los dispositivos finales, como computadoras y teléfonos, sirven de interfaz entre las personas y la red y pueden originar o recibir los datos. El filtrado, el encaminamiento y el medio de transmisión corresponden a otros componentes de la red."
     }

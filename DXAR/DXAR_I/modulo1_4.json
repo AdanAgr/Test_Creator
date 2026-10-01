@@ -2,36 +2,21 @@
   "questions": [
     {
       "question": "¿Qué infraestructura de red proporciona acceso a usuarios y dispositivos finales en un área geográfica pequeña, que generalmente es una red en un departamento de una empresa, un hogar o una pequeña empresa?",
-      "options": [
-        "Intranet",
-        "LAN",
-        "WAN",
-        "Extranet"
-      ],
+      "options": ["Intranet", "LAN", "WAN", "Extranet"],
       "correct_option": 1,
       "questionType": "singleChoice",
       "explication": "Una LAN (Local Area Network) conecta usuarios y dispositivos finales dentro de un área geográfica pequeña, como una vivienda, una oficina o un departamento de una empresa."
     },
     {
       "question": "¿Qué infraestructura de red podría usar una organización para proporcionar acceso seguro a las personas que trabajan para una organización diferente pero que requieren acceso a los datos de la organización?",
-      "options": [
-        "Intranet",
-        "LAN",
-        "WAN",
-        "Extranet"
-      ],
+      "options": ["Intranet", "LAN", "WAN", "Extranet"],
       "correct_option": 3,
       "questionType": "singleChoice",
       "explication": "Una extranet permite que personas externas autorizadas, como empleados de otra organización, accedan de forma controlada y segura a determinados recursos internos."
     },
     {
       "question": "¿Qué infraestructura de red proporciona acceso a otras redes en un área geográfica grande, que a menudo es propiedad y está administrada por un proveedor de servicios de telecomunicaciones?",
-      "options": [
-        "Intranet",
-        "LAN",
-        "WAN",
-        "Extranet"
-      ],
+      "options": ["Intranet", "LAN", "WAN", "Extranet"],
       "correct_option": 2,
       "questionType": "singleChoice",
       "explication": "Una WAN (Wide Area Network) conecta redes a través de grandes áreas geográficas y suele utilizar infraestructura proporcionada y administrada por operadores o proveedores de telecomunicaciones."
